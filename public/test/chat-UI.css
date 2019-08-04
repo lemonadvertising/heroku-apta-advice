@@ -1,0 +1,106 @@
+.chatbox{
+    width: 27vw;
+    height: 60vh;
+    background-color: grey;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    --txtColor:white;
+    --chatHeadColor:lightBlue;
+    --chatBodyColor:grey;
+    --chatFooterColor:white;
+    --msgBgColor:lightgreen;
+}
+.chatbox .chat_head{
+    height: 10%;
+    color: var(--txtColor);
+    background-color: var(--chatHeadColor);
+}
+.chatbox .chat_head .title{
+    color: var(--txtColor);
+    font-size:20px;
+     margin: 0;
+    padding: 5%;
+}
+.chatbox .chat_body{
+      height: 78%;
+    color: var(--txtColor);
+    background-color: var(--chatBodyColor);
+    padding: 2%;
+}
+.chatbox .chat_body .msg{
+    width: 100%;
+    float: left;
+    padding: 1%;
+}
+.chatbox .chat_body .msg .msgSent{
+      margin: 0;
+    padding: 2%;
+    background-color: var(--msgBgColor);
+    text-align: right;
+    max-width: 60%;
+    float: right;
+     margin-right: 3%;
+    position: relative;
+}
+.chatbox .chat_body .msg .msgSent::after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-top: 10px solid var(--msgBgColor);
+    position: absolute;
+    top:0;
+    right: -10px;
+}
+.chatbox .chat_body .msg .msgRecieved{
+      margin: 0;
+    padding: 2%;
+    background-color: var(--msgBgColor);
+    text-align: left;
+    max-width: 60%;
+    float: left;
+     margin-left: 3%;
+    position: relative;
+}
+.chatbox .chat_body .msg .msgRecieved::before{
+    content: "";
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-top: 10px solid var(--msgBgColor);
+    position: absolute;
+    top:0;
+    left: -10px;
+}
+.chatbox .chat_body .msg .botLogo{
+    float: left;
+    border-radius: 50%;
+    margin-top: 0%;
+    width: 35px;
+}
+.chatbox .chat_footer{
+    height: 10%;
+    color: var(--txtColor);
+    background-color: var(--chatFooterColor);
+}
+@media screen and (max-width: 1024px){
+    #chatbox{
+        width: 50%;
+        height: 60vh;
+        background-color: grey;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}
+@media screen and (max-width: 767px){
+    #chatbox{
+        width: calc(100% - 40px);
+        height: calc(100vh - 40px);
+        background-color: grey;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+}

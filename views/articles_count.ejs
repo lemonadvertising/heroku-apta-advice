@@ -1,0 +1,1626 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+        .btn-margin{
+            border-radius: 5px;
+            margin-bottom: 7px;
+        }
+        
+        a:hover, a:focus {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+   <div class="content">
+      
+      <a href="/dashboard/articlesCount_report" class="btn btn-primary btn-md btn-margin">Download</a>
+       <div class="row">
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Ovulation calculator-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Ovulationcalculator_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Ovulation calculator-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Ovulationcalculator_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Improve fertility-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Improvefertility_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Improve fertility-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Improvefertility_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Home pregnancy tests-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Homepregnancytests_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Home pregnancy tests-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Homepregnancytests_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 6-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week6_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 6-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week6_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 7-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week7_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 7-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week7_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 8-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week8_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 8-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week8_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 9-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week9_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 9-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week9_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 10-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week10_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 10-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week10_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 11-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week11_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 11-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week11_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 12-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week12_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 12-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week12_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 13-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week13_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 13-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week13_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 14-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week14_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 14-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week14_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 15-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week15_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 15-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week15_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 16-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week16_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 16-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week16_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 17-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week17_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 17-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week17_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 18-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week18_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 18-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week18_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 19-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week19_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 19-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week19_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 20-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week20_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 20-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week20_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 21-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week21_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 21-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week21_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 22-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week22_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 22-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week22_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 23-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week23_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 23-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week23_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 24-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week24_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 24-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week24_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 25-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week25_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 25-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week25_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 26-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week26_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 26-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week26_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 27-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week27_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 27-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week27_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 28-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week28_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 28-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week28_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 29-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week29_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 29-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week29_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 30-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week30_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 30-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week30_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 31-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week31_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 31-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week31_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 32-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week32_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 32-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week32_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 33-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week33_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 33-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week33_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 34-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week34_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 34-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week34_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 35-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week35_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 35-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week35_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 36-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week36_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 36-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week36_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 37-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week37_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 37-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week37_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 38-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week38_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 38-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week38_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 39-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week39_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 39-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week39_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 40-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week40_EN_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Week 40-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= week40_AR_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">0 to 3 month article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= month0_3_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">4 to 6 month article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= month4_6_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">7 to 9 month article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= month7_9_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">10 to 12 month article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= month10_12_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">One year article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= oneYr_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Two year article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= twoYr_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Three year article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= threeYr_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pre-school article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= pre_school_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Healthy diet pregnancy-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Healthydietpregnancy_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Healthy diet pregnancy-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Healthydietpregnancy_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Supplements during pregnancy-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Supplementsduringpregnancy_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Supplements during pregnancy-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Supplementsduringpregnancy_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Body during pregnancy-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Bodyduringpregnancy_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Body during pregnancy-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Bodyduringpregnancy_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Virtual delivery-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Virtualdelivery_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Virtual delivery-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Virtualdelivery_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Write birthPLan-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= WritebirthPLan_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Write birthPLan-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= WritebirthPLan_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Breastfeeding-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Breastfeeding_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Breastfeeding-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Breastfeeding_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby development-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babydevelopment_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby development-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babydevelopment_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby health-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babyhealth_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby health-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babyhealth_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby growth-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babygrowth_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby growth-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babygrowth_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby allergies-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babyallergies_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby allergies-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Babyallergies_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know something else-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowsomethingelse_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know something else-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowsomethingelse_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby Nutrition-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= BabyNutrition_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Baby Nutrition-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= BabyNutrition_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Weaning Meal planner-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= WeaningMealplanner_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Weaning Meal planner-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= WeaningMealplanner_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Bottle feeding-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Bottlefeeding_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Bottle feeding-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Bottlefeeding_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Developing milestone-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Developingmilestone_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Developing milestone-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Developingmilestone_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Building immunity-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Buildingimmunity_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Building immunity-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Buildingimmunity_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Brain development-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Braindevelopment_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Brain development-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Braindevelopment_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Weekly meal pans-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Weeklymealpans_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Weekly meal pans-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Weeklymealpans_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Take an assessment test-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Takeanassessmenttest_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Take an assessment test-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Takeanassessmenttest_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know more products-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowmoreproducts_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know more products-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowmoreproducts_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know more products-EN(10 to 12 months)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowmoreproducts_EN_10_12 %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Know more products-AR(10 to 12 months)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Knowmoreproducts_AR_10_12 %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Buy Now-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= BuyNow_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Buy Now-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= BuyNow_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Games-EN</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Games_EN %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Games-AR</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= Games_AR %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+       <div style="width:100%; height1px; margin-bottom:25px;"></div>
+</div>
+</div>
+<!-- /#right-panel -->
+<!-- Right Panel -->
+<% include partials/scripts %>
+</body>
+
+</html>

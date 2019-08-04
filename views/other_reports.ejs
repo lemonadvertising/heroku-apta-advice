@@ -1,0 +1,78 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <meta charset="UTF-8">
+    <% include partials/scripts %>
+    <style>
+        .btn-margin{
+            border-radius: 5px;
+            margin-bottom: 7px;
+        }
+        
+        a:hover, a:focus {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+  		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script>
+      $(document).ready(function(){
+          var u_data =<%- JSON.stringify(udata) %>;
+    			 var oTable = $("#mtable").DataTable({
+    				data:u_data,
+    				"columns":[
+    					{ title: "Profile name" },
+                        { title: "Language" },/*
+                        { title: "DOB(Motherhood)" },
+                        { title: "Age(Motherhood)" },*/
+                        { title: "Chat started on" },
+                        { title: "Journey" }
+    				]
+    			 });
+        });
+    		 
+      
+    </script>  
+  </head>
+  <body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+        <a href="/dashboard/other_report" class="btn btn-primary btn-md btn-margin">Download</a>
+        <table id="mtable" class="table table-striped" width="100%"></table>
+        </div>
+    </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    
+  </body>
+</html>

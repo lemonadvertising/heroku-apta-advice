@@ -1,0 +1,3603 @@
+/* This css file is to over write bootstarp css
+--------------------------------------------------------- /
+* Theme Name: Sufee-Admin Admin Template
+* Theme URI: http://demos.jeweltheme.com/Sufee-Admin/
+* Author: jewel_theme
+* Author URI: http://themeforest.net/user/jewel_theme/portfolio
+* Description:
+* Version: 1.0.0
+* License: GNU General Public License v2 or later
+* License URI: http://www.gnu.org/licenses/gpl-2.0.html
+* Tags: html, themplate, Sufee-Admin
+--------------------------------------------------------- */
+/* Bootstrap */
+@import url(../css/animate.css);
+/* line 1, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap {
+  position: relative;
+  margin: 0 auto;
+}
+
+/* line 4, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap canvas.gaugejs {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* line 8, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap i, .gaugejs-wrap.sparkline .value {
+  top: 50%;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap i {
+  position: absolute;
+  left: 0;
+  z-index: 1000;
+  margin-top: -15px;
+  font-size: 30px;
+}
+
+/* line 22, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap.type-2 .value {
+  display: block;
+  margin-top: -85px;
+}
+
+/* line 26, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap.type-2 label {
+  display: block;
+  margin-top: -10px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #9da0a8;
+  text-transform: uppercase;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap.sparkline {
+  position: relative;
+}
+
+/* line 37, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_gauge.scss */
+.gaugejs-wrap.sparkline .value {
+  position: absolute;
+  margin-top: -5px;
+  font-size: 10px;
+  line-height: 10px;
+}
+
+/* line 257, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 28, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  transition: opacity background .15s ease-out;
+}
+
+/* line 80, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+/* line 83, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+/* line 87, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 1px;
+  transition: left .15s ease-out;
+}
+
+/* line 103, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+/* line 115, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-lg {
+  width: 48px;
+  height: 28px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+/* line 118, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-sm {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 14px;
+}
+
+/* line 121, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-xs {
+  width: 24px;
+  height: 16px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-default.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 10px;
+}
+
+/* line 261, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 28, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  transition: opacity background .15s ease-out;
+}
+
+/* line 55, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-label::before,
+.switch.switch-text .switch-label::after {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  text-align: center;
+  transition: inherit;
+}
+
+/* line 65, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-label::before {
+  right: 1px;
+  color: #e9ecef;
+  content: attr(data-off);
+}
+
+/* line 70, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-label::after {
+  left: 1px;
+  color: #fff;
+  content: attr(data-on);
+  opacity: 0;
+}
+
+/* line 80, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+/* line 83, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+/* line 87, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 1px;
+  transition: left .15s ease-out;
+}
+
+/* line 103, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text .switch-input:checked ~ .switch-handle {
+  left: 26px;
+}
+
+/* line 127, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 30px;
+}
+
+/* line 130, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+/* line 133, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-xs {
+  width: 32px;
+  height: 16px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-text.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+/* line 265, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 28, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-family: FontAwesome;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  transition: opacity background .15s ease-out;
+}
+
+/* line 55, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-label::before,
+.switch.switch-icon .switch-label::after {
+  position: absolute;
+  top: 50%;
+  width: 50%;
+  margin-top: -.5em;
+  line-height: 1;
+  text-align: center;
+  transition: inherit;
+}
+
+/* line 65, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-label::before {
+  right: 1px;
+  color: #e9ecef;
+  content: attr(data-off);
+}
+
+/* line 70, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-label::after {
+  left: 1px;
+  color: #fff;
+  content: attr(data-on);
+  opacity: 0;
+}
+
+/* line 80, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+/* line 83, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+/* line 87, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-handle {
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 1px;
+  transition: left .15s ease-out;
+}
+
+/* line 103, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon .switch-input:checked ~ .switch-handle {
+  left: 26px;
+}
+
+/* line 139, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-lg {
+  width: 56px;
+  height: 28px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-lg .switch-handle {
+  width: 24px;
+  height: 24px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 30px;
+}
+
+/* line 142, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-sm {
+  width: 40px;
+  height: 20px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-sm .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 22px;
+}
+
+/* line 145, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-xs {
+  width: 32px;
+  height: 16px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-xs .switch-handle {
+  width: 12px;
+  height: 12px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-icon.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 18px;
+}
+
+/* line 269, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 24px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+/* line 28, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-label {
+  position: relative;
+  display: block;
+  height: inherit;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 2px;
+  transition: opacity background .15s ease-out;
+}
+
+/* line 80, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-input:checked ~ .switch-label::before {
+  opacity: 0;
+}
+
+/* line 83, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-input:checked ~ .switch-label::after {
+  opacity: 1;
+}
+
+/* line 87, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #e9ecef;
+  border-radius: 1px;
+  transition: left .15s ease-out;
+  border: 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* line 103, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d .switch-input:checked ~ .switch-handle {
+  left: 16px;
+}
+
+/* line 151, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-lg {
+  width: 48px;
+  height: 28px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-lg .switch-label {
+  font-size: 12px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-lg .switch-handle {
+  width: 28px;
+  height: 28px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-lg .switch-input:checked ~ .switch-handle {
+  left: 20px;
+}
+
+/* line 154, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-sm {
+  width: 32px;
+  height: 20px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-sm .switch-label {
+  font-size: 8px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-sm .switch-handle {
+  width: 20px;
+  height: 20px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-sm .switch-input:checked ~ .switch-handle {
+  left: 12px;
+}
+
+/* line 157, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-xs {
+  width: 24px;
+  height: 16px;
+}
+
+/* line 5, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-xs .switch-label {
+  font-size: 7px;
+}
+
+/* line 9, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-xs .switch-handle {
+  width: 16px;
+  height: 16px;
+}
+
+/* line 14, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch.switch-3d.switch-xs .switch-input:checked ~ .switch-handle {
+  left: 8px;
+}
+
+/* line 275, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-pill .switch-label, .switch.switch-3d .switch-label,
+.switch-pill .switch-handle, .switch.switch-3d .switch-handle {
+  border-radius: 50em !important;
+}
+
+/* line 280, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-pill .switch-label::before, .switch.switch-3d .switch-label::before {
+  right: 2px !important;
+}
+
+/* line 283, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-pill .switch-label::after, .switch.switch-3d .switch-label::after {
+  left: 2px !important;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary > .switch-input:checked ~ .switch-label {
+  background: #440099 !important;
+  border-color: #2d0066;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary > .switch-input:checked ~ .switch-handle {
+  border-color: #2d0066;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #440099;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline > .switch-input:checked ~ .switch-label::after {
+  color: #440099;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #440099;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #440099;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #440099;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-primary-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #440099 !important;
+  border-color: #440099;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary > .switch-input:checked ~ .switch-label {
+  background: #868e96 !important;
+  border-color: #6c757d;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary > .switch-input:checked ~ .switch-handle {
+  border-color: #6c757d;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #868e96;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline > .switch-input:checked ~ .switch-label::after {
+  color: #868e96;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #868e96;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #868e96;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #868e96;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-secondary-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #868e96 !important;
+  border-color: #868e96;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success > .switch-input:checked ~ .switch-label {
+  background: #440099 !important;
+  border-color: #2d0066;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success > .switch-input:checked ~ .switch-handle {
+  border-color: #2d0066;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #440099;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline > .switch-input:checked ~ .switch-label::after {
+  color: #440099;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #440099;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #440099;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #440099;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-success-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #440099 !important;
+  border-color: #440099;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info > .switch-input:checked ~ .switch-label {
+  background: #17a2b8 !important;
+  border-color: #117a8b;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info > .switch-input:checked ~ .switch-handle {
+  border-color: #117a8b;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #17a2b8;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline > .switch-input:checked ~ .switch-label::after {
+  color: #17a2b8;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #17a2b8;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #17a2b8;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #17a2b8;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-info-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #17a2b8 !important;
+  border-color: #17a2b8;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning > .switch-input:checked ~ .switch-label {
+  background: #ffc107 !important;
+  border-color: #d39e00;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning > .switch-input:checked ~ .switch-handle {
+  border-color: #d39e00;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ffc107;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline > .switch-input:checked ~ .switch-label::after {
+  color: #ffc107;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #ffc107;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #ffc107;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #ffc107;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-warning-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #ffc107 !important;
+  border-color: #ffc107;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger > .switch-input:checked ~ .switch-label {
+  background: #dc3545 !important;
+  border-color: #bd2130;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger > .switch-input:checked ~ .switch-handle {
+  border-color: #bd2130;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #dc3545;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline > .switch-input:checked ~ .switch-label::after {
+  color: #dc3545;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #dc3545;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #dc3545;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #dc3545;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-danger-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #dc3545 !important;
+  border-color: #dc3545;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light > .switch-input:checked ~ .switch-label {
+  background: #f8f9fa !important;
+  border-color: #dae0e5;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light > .switch-input:checked ~ .switch-handle {
+  border-color: #dae0e5;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #f8f9fa;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline > .switch-input:checked ~ .switch-label::after {
+  color: #f8f9fa;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #f8f9fa;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #f8f9fa;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #f8f9fa;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-light-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #f8f9fa !important;
+  border-color: #f8f9fa;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark > .switch-input:checked ~ .switch-label {
+  background: #343a40 !important;
+  border-color: #1d2124;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark > .switch-input:checked ~ .switch-handle {
+  border-color: #1d2124;
+}
+
+/* line 175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #343a40;
+}
+
+/* line 179, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline > .switch-input:checked ~ .switch-label::after {
+  color: #343a40;
+}
+
+/* line 184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline > .switch-input:checked ~ .switch-handle {
+  border-color: #343a40;
+}
+
+/* line 190, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-label {
+  background: #fff !important;
+  border-color: #343a40;
+}
+
+/* line 194, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-label::after {
+  color: #343a40;
+}
+
+/* line 199, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_switches.scss */
+.switch-dark-outline-alt > .switch-input:checked ~ .switch-handle {
+  background: #343a40 !important;
+  border-color: #343a40;
+}
+
+/* line 2, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box {
+  min-height: 160px;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: #fff;
+}
+
+/* line 10, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box i {
+  display: block;
+  margin: -1px -1px 0;
+  font-size: 40px;
+  line-height: 90px;
+  background: #e9ecef;
+}
+
+/* line 20, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box .chart-wrapper {
+  height: 90px;
+  margin: -90px 0 0;
+}
+
+/* line 24, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box .chart-wrapper canvas {
+  width: 100% !important;
+  height: 90px !important;
+}
+
+/* line 30, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box ul {
+  padding: 10px 0;
+  list-style: none;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box ul li {
+  display: block;
+  float: left;
+  width: 50%;
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+/* line 42, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box ul li:first-child {
+  border-right: 1px solid #c2cfd6;
+}
+
+/* line 46, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box ul li strong {
+  display: block;
+  font-size: 20px;
+}
+
+/* line 51, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box ul li span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #949CA0;
+  text-transform: uppercase;
+}
+
+/* line 61, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box.facebook i {
+  color: #fff;
+  background: #3b5998;
+}
+
+/* line 68, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box.twitter i {
+  color: #fff;
+  background: #00aced;
+}
+
+/* line 75, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box.linkedin i {
+  color: #fff;
+  background: #4875b4;
+}
+
+/* line 82, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.social-box.google-plus i {
+  color: #fff;
+  background: #d34836;
+}
+
+/* line 89, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 94, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li {
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+/* line 100, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li .title {
+  width: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #868e96;
+  vertical-align: middle;
+}
+
+/* line 108, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li .bars {
+  position: absolute;
+  top: 15px;
+  width: 100%;
+  padding-left: 100px;
+}
+
+/* line 114, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li .bars .progress:first-child {
+  margin-bottom: 2px;
+}
+
+/* line 119, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li.legend {
+  text-align: center;
+}
+
+/* line 122, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li.legend .badge {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  padding: 0;
+}
+
+/* line 130, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li.divider {
+  height: 40px;
+}
+
+/* line 133, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars li.divider i {
+  margin: 0 !important;
+}
+
+/* line 141, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars.type-2 li {
+  overflow: hidden;
+}
+
+/* line 144, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars.type-2 li i {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-left: 5px;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+/* line 152, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars.type-2 li .title {
+  display: inline-block;
+  width: auto;
+  margin-top: -9px;
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 40px;
+  color: #212529;
+}
+
+/* line 162, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars.type-2 li .value {
+  float: right;
+  font-weight: 600;
+}
+
+/* line 167, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.horizontal-bars.type-2 li .bars {
+  position: absolute;
+  top: auto;
+  bottom: 0;
+  padding: 0;
+}
+
+/* line 177, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* line 182, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li {
+  position: relative;
+  height: 40px;
+  vertical-align: middle;
+}
+
+/* line 187, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li i {
+  display: block;
+  float: left;
+  width: 35px !important;
+  height: 35px !important;
+  margin: 2px;
+  line-height: 35px !important;
+  text-align: center;
+}
+
+/* line 197, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .desc {
+  height: 40px;
+  margin-left: 50px;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* line 202, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .desc .title {
+  padding: 2px 0 0;
+  margin: 0;
+}
+
+/* line 206, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .desc small {
+  display: block;
+  margin-top: -4px;
+  color: #868e96;
+}
+
+/* line 213, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .value {
+  position: absolute;
+  top: 2px;
+  right: 45px;
+  text-align: right;
+}
+
+/* line 219, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .value strong {
+  display: block;
+  margin-top: -3px;
+}
+
+/* line 225, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .actions {
+  position: absolute;
+  top: -4px;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+/* line 234, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li .actions i {
+  float: none;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  line-height: normal;
+}
+
+/* line 244, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li.divider {
+  height: 40px;
+}
+
+/* line 247, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/_widgets.scss */
+.icons-list li.divider i {
+  width: auto;
+  height: auto;
+  margin: 2px 0 0;
+  font-size: 18px;
+}
+
+/* line 20, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.bg-flat-color-1 {
+  background: #20a8d8;
+}
+
+/* line 21, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.bg-flat-color-2 {
+  background: #63c2de;
+}
+
+/* line 22, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.bg-flat-color-3 {
+  background: #ffc107;
+}
+
+/* line 23, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.bg-flat-color-4 {
+  background: #f86c6b;
+}
+
+/* line 24, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.bg-flat-color-5 {
+  background: #4dbd74;
+}
+
+/* line 27, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.transition {
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* line 35, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+body {
+  background: #eceff1;
+  display: table;
+  font-family: arial, sans-serif;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* line 43, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+div[class*="col-"] {
+  float: left;
+}
+
+/* line 47, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+p {
+  font-size: 16px;
+  font-family: arial, sans-serif;
+  font-weight: 400;
+  line-height: 24px;
+  color: #878787;
+}
+
+/* line 54, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+p:focus {
+  border: none;
+  outline: 0;
+}
+
+/* line 58, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+a, button {
+  text-decoration: none;
+  outline: none !important;
+  color: #878787;
+  -webkit-transition: all 0.25s ease;
+  -moz-transition: all 0.25s ease;
+  -ms-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+/* line 70, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+a:hover,
+a:focus {
+  text-decoration: none;
+  color: #000;
+}
+
+/* line 76, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* line 84, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+ul,
+ol {
+  padding-left: 0;
+}
+
+/* line 88, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn:focus,
+button:focus {
+  box-shadow: none !important;
+  outline: 0;
+}
+
+/* line 93, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+img {
+  max-width: 100%;
+}
+
+/* line 96, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn,
+button,
+input,
+textarea {
+  box-shadow: none;
+  outline: 0 !important;
+}
+
+/* line 103, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.no-padding {
+  padding: 0 !important;
+}
+
+/* Global Styles */
+/* Main Styles */
+/* line 110, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.basix-container {
+  display: table;
+  min-height: 100vh;
+  position: relative;
+  width: 100%;
+}
+
+/* line 116, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+aside.left-panel {
+  background: #006ab4;
+  display: table-cell;
+  height: 100vh;
+  min-height: 100%;
+  padding: 0 25px;
+  vertical-align: top;
+  width: 280px;
+  transition: width 0.3s ease;
+}
+
+/* line 127, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar {
+  /* background: #440099; */
+  border-radius: 0;
+  border: none;
+  display: block;
+  margin: 0;
+  margin-bottom: 100px;
+  padding: 0;
+}
+
+/* line 136, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-header {
+  float: none;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 141, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-brand {
+  border-bottom: 1px solid #FFFFFF;
+  color: #f1f2f7 !important;
+  font-family: 'Open Sans';
+  font-size: 22px;
+  float: none;
+  line-height: 50px;
+  margin: 0;
+  text-align: left;
+  text-transform: capitalize;
+  display: block;
+  min-height: 69px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* line 158, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-brand span {
+  font-weight: 600;
+}
+
+/* line 161, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-brand img {
+  max-width: 160px;
+}
+
+/* line 164, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-brand.hidden {
+  display: none;
+}
+
+/* line 169, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .menu-title {
+  border-bottom: 1px solid #4e4e52;
+  color: #9496a1;
+  clear: both;
+  display: block;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 50px;
+  padding: 15px 0 0 0;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+/* line 182, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav {
+  float: none;
+  position: relative;
+}
+
+/* line 185, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li {
+  width: 100%;
+}
+
+/* line 187, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.active .menu-icon,
+.navbar .navbar-nav li:hover .toggle_nav_button:before,
+.navbar .navbar-nav li .toggle_nav_button.nav-open:before {
+  color: #fff !important;
+}
+
+/* line 192, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li .dropdown-toggle:after {
+  display: none;
+}
+
+/* line 195, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li > a {
+  background: none !important;
+  color: #ffffff !important;
+  display: inline-block;
+  font-family: 'Open Sans';
+  font-size: 14px;
+  line-height: 30px;
+  padding: 10px 0;
+  position: relative;
+  width: 100%;
+}
+
+/* line 205, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li > a:hover,
+.navbar .navbar-nav li > a:hover .menu-icon {
+  color: #fff !important;
+}
+
+/* line 209, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li > a .menu-icon {
+  color: #8b939b;
+  float: left;
+  margin-top: 8px;
+  width: 55px;
+  text-align: left;
+  z-index: 9;
+}
+
+/* line 217, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li > a .menu-title-text {
+  font-size: 14px;
+}
+
+/* line 220, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li > a .badge {
+  border-radius: 0;
+  font-family: 'Open Sans';
+  font-weight: 600;
+  float: right;
+  margin: 6px 0 0 0;
+  padding: 0.4em 0.5em;
+}
+
+/* line 229, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children {
+  position: relative;
+}
+
+/* line 231, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children a {
+  line-height: 30px;
+}
+
+/* line 233, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children a:before {
+  content: "\f105";
+  color: #c8c9ce;
+  font-family: 'Fontawesome';
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  text-align: right;
+  -webkit-transition: all .25s ease;
+  -moz-transition: all .25s ease;
+  -ms-transition: all .25s ease;
+  -o-transition: all .25s ease;
+  transition: all .25s ease;
+}
+
+/* line 249, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children a:hover:before {
+  color: #fff;
+}
+
+/* line 253, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu {
+  background: #006ab4;
+  border: none;
+  box-shadow: none;
+  overflow-y: hidden;
+  padding: 0 0 0 35px;
+}
+
+/* line 259, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu li {
+  position: relative;
+}
+
+/* line 262, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu i {
+  color: #c8c9ce;
+  float: left;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  font-size: 14px;
+  top: 9px;
+}
+
+/* line 271, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu a {
+  padding: 2px 0 2px 30px;
+}
+
+/* line 273, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu a:before {
+  content: '';
+  display: none;
+}
+
+/* line 277, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children .sub-menu a .menu-icon {
+  top: 13px;
+  text-align: left;
+  width: 25px;
+}
+
+/* line 285, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children.show a:before {
+  content: "\f107";
+}
+
+/* line 288, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav li.menu-item-has-children.show .sub-menu {
+  max-height: 1000px;
+  opacity: 1;
+  position: static !important;
+}
+
+/* line 298, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar .navbar-nav > .active > a,
+.navbar .navbar-nav > .active > a:focus,
+.navbar .navbar-nav > .active > a:hover {
+  color: #d7d9e3 !important;
+}
+
+/* line 303, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.navbar-nav li span.count {
+  background: #a9d86e;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 9px;
+  font-weight: 700;
+  float: right;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  margin-right: 15px;
+  text-align: center;
+}
+
+/* line 320, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+body.open .navbar .navbar-brand.hidden {
+  display: block;
+}
+
+/* line 326, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel {
+  max-width: 70px;
+  width: 70px;
+}
+
+/* line 330, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-brand {
+  display: none;
+}
+
+/* line 332, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-brand.hidden {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0;
+  padding-right: 0;
+  text-align: center;
+}
+
+/* line 339, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-brand.hidden img {
+  max-width: 30px;
+  margin: 0 auto;
+}
+
+/* line 344, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-brand.d-md-none {
+  display: block !important;
+  margin: 13px 0 0;
+  min-height: 67px;
+  padding: 0;
+  text-align: center;
+}
+
+/* line 353, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav:before {
+  display: none !important;
+}
+
+/* line 356, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li {
+  position: relative;
+}
+
+/* line 358, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li a {
+  font-size: 0;
+  z-index: 0;
+  transition: none;
+}
+
+/* line 362, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li a .menu-icon {
+  font-size: 20px;
+  z-index: -1;
+  width: inherit;
+}
+
+/* line 367, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li a .menu-title-text {
+  font-size: 0;
+}
+
+/* line 370, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li a .badge {
+  display: none;
+}
+
+/* line 374, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li > a {
+  max-width: 60px;
+  padding-left: 0;
+}
+
+/* line 378, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children {
+  overflow: hidden;
+}
+
+/* line 381, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children a:before {
+  content: '';
+  display: none;
+}
+
+/* line 386, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children ul {
+  padding-left: 0;
+}
+
+/* line 389, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu {
+  display: block;
+  left: inherit;
+  right: -180px;
+  top: 0;
+}
+
+/* line 395, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu li a {
+  display: block;
+  font-size: 14px;
+  max-width: inherit;
+  padding: 2px 15px 2px 25px;
+  width: 100%;
+}
+
+/* line 401, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children .sub-menu li a .menu-icon {
+  text-align: center;
+}
+
+/* line 407, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children.show {
+  overflow: visible;
+}
+
+/* line 409, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.menu-item-has-children.show .sub-menu {
+  position: absolute !important;
+}
+
+/* line 414, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li span.count {
+  display: none;
+  margin-right: 5px;
+  z-index: 1;
+}
+
+/* line 420, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav li.active a:after {
+  content: '';
+  display: none;
+}
+
+/* line 426, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open aside.left-panel .navbar .navbar-nav .menu-title {
+  font-size: 0;
+  line-height: 0;
+  opacity: 0;
+  padding: 0;
+}
+
+/* Right panel */
+/* line 438, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel {
+  display: table-cell;
+  padding-left: 0 !important;
+  -webkit-transition: all .35s ease;
+  -moz-transition: all .35s ease;
+  -ms-transition: all .35s ease;
+  -o-transition: all .35s ease;
+  transition: all .35s ease;
+}
+
+/* line 447, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .breadcrumbs {
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 0;
+  padding: 0 5px;
+  width: 100%;
+}
+
+/* line 454, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .breadcrumbs .col-lg-8 .page-header {
+  float: left;
+}
+
+/* line 459, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .page-header {
+  min-height: 50px;
+  margin: 0px;
+  padding: 0px 15px;
+  background: #ffffff;
+  border-bottom: 0px;
+}
+
+/* line 465, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .page-header h1 {
+  font-size: 18px;
+  padding: 15px 0;
+}
+
+/* line 469, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .page-header .breadcrumb {
+  margin: 0px;
+  padding: 13.5px 0;
+  background: #fff;
+  text-transform: capitalize;
+}
+
+/* line 475, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel .page-header .breadcrumb > li + li:before {
+  padding: 0 5px;
+  color: #ccc;
+  content: "/\00a0";
+}
+
+/* line 482, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.right-panel header.header {
+  background: #fff;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+  clear: both;
+  display: inline-block;
+  padding: 15px 20px 13px 20px;
+  width: 100%;
+}
+
+/* line 490, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open .right-panel {
+  margin-left: -210px;
+}
+
+/* line 493, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header.fixed-top {
+  background: #fff;
+  padding: 20px;
+}
+
+/* line 497, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-menu .col-sm-7 {
+  position: inherit;
+}
+
+/* line 500, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.menutoggle {
+  background: #002677;
+  border-radius: 50%;
+  color: #fff !important;
+  cursor: pointer;
+  font-size: 18px;
+  height: 43px;
+  line-height: 44px;
+  margin: -2px 20px 0 -57px;
+  text-align: center;
+  width: 43px;
+}
+
+/* line 512, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.open .menutoggle i:before {
+  content: "\f0a4";
+}
+
+/* line 515, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.search-trigger {
+  background: transparent;
+  border: none;
+  color: #272c33;
+  cursor: pointer;
+  font-size: 16px;
+  height: 41px;
+  width: 43px;
+  line-height: 38px;
+}
+
+/* line 525, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline {
+  background: #263238;
+  display: none;
+  height: 70px;
+  margin: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 9999;
+}
+
+/* line 535, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form {
+  height: 100%;
+  max-width: 1025px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* line 540, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form input[type="text"] {
+  background: #263238;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  color: #d3d3d3;
+  font-size: 16px;
+  height: inherit;
+  margin-right: 0 !important;
+  padding: 10px 36px 10px 15px;
+  width: 100%;
+}
+
+/* line 552, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form input[type="text"].active,
+header .form-inline .search-form input[type="text"]:focus {
+  border-color: rgba(0, 0, 0, 0.125);
+  outline: 0;
+}
+
+/* line 557, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form button {
+  background: transparent;
+  border: none;
+  color: #fff;
+  font-size: 16px;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  margin-top: -14px !important;
+}
+
+/* line 567, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form button:active,
+header .form-inline .search-form button:focus,
+header .form-inline .search-form button:visited,
+header .form-inline .search-form .btn-outline-success:hover {
+  background: transparent;
+  border: none !important;
+  box-shadow: none;
+  outline: 0 !important;
+}
+
+/* line 576, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+header .form-inline .search-form.close {
+  display: none;
+}
+
+/* line 581, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left.open .form-inline {
+  display: block;
+}
+
+/* line 584, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown {
+  display: inline-block;
+}
+
+/* line 586, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-toggle {
+  background: transparent;
+  border: none;
+  color: #272c33;
+  font-size: 16px;
+}
+
+/* line 591, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-toggle:after {
+  display: none;
+}
+
+/* line 594, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-toggle .count {
+  border-radius: 50%;
+  color: #fff;
+  font-size: 11px;
+  height: 15px;
+  width: 15px;
+  line-height: 15px;
+  right: 0;
+  top: 0;
+  position: absolute;
+}
+
+/* line 605, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-toggle:active, .header-left .dropdown .dropdown-toggle:focus, .header-left .dropdown .dropdown-toggle:visited {
+  background: none !important;
+  border-color: transparent !important;
+  color: #272c33 !important;
+}
+
+/* line 613, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  top: 49px !important;
+}
+
+/* line 619, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu p {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+/* line 624, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item {
+  color: #272c33;
+  font-size: 13px;
+  padding: 10px 15px 3px;
+  text-overflow: ellipsis;
+}
+
+/* line 629, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item .photo {
+  float: left;
+  margin-right: 15px;
+  width: 25px;
+}
+
+/* line 635, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item .message .name {
+  margin-top: -5px;
+}
+
+/* line 638, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item .message .time {
+  font-size: 11px;
+}
+
+/* line 641, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item .message p {
+  clear: both;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+}
+
+/* line 649, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.header-left .dropdown .dropdown-menu .dropdown-item:hover {
+  background: transparent;
+}
+
+/* line 655, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dropdown-menu {
+  border-radius: 0;
+  transform: none !important;
+}
+
+/* line 662, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.for-notification .dropdown-menu .dropdown-item {
+  padding: 5px 15px !important;
+  text-overflow: ellipsis;
+}
+
+/* line 665, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.for-notification .dropdown-menu .dropdown-item i {
+  float: left;
+  font-size: 14px;
+  margin: 5px 5px 0 0;
+  text-align: left;
+  width: 20px;
+}
+
+/* line 672, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.for-notification .dropdown-menu .dropdown-item p {
+  padding: 0 !important;
+  text-overflow: ellipsis;
+}
+
+/* line 679, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area {
+  float: right;
+  padding-right: 0;
+  position: relative;
+}
+
+/* line 683, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .user-menu {
+  background: #fff;
+  border: none;
+  font-family: 'Open Sans';
+  left: inherit !important;
+  right: 0;
+  top: 55px !important;
+  margin: 0;
+  max-width: 150px;
+  padding: 5px 10px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  min-width: 150px;
+}
+
+/* line 697, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .user-menu .nav-link {
+  color: #272c33;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 5px 0;
+}
+
+/* line 705, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .user-avatar {
+  float: right;
+  margin-top: 4px;
+  width: 32px;
+}
+
+/* line 710, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .user-info .name {
+  color: #8c8c8c;
+  font-size: 14px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+/* line 716, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .count {
+  background: #d9534f;
+  border-radius: 50%;
+  color: #fff;
+  font-family: 'Open Sans';
+  font-size: 9px;
+  font-weight: 700;
+  float: right;
+  height: 20px;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* line 729, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.user-area .dropdown-toggle:after {
+  display: none;
+}
+
+/* line 733, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#menuToggle2 {
+  padding-left: 25px;
+}
+
+/* line 736, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select {
+  color: #f1f2f7;
+  float: right;
+  margin: 7px 20px 0 0;
+  max-width: 80px;
+}
+
+/* line 741, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select:focus, #language-select:visited {
+  border: none;
+  outline: 0;
+}
+
+/* line 746, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select .dropdown-toggle::after {
+  display: none;
+}
+
+/* line 749, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select .dropdown-menu {
+  background: #fff;
+  border: none;
+  border-radius: 0;
+  left: -8px !important;
+  min-width: inherit;
+  padding: 0 5px;
+  top: 46px !important;
+}
+
+/* line 757, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select .dropdown-menu .dropdown-item {
+  margin-right: 0;
+  max-width: 25px;
+  padding: 0;
+}
+
+/* line 761, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select .dropdown-menu .dropdown-item:hover {
+  background: #fff;
+}
+
+/* line 764, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#language-select .dropdown-menu .dropdown-item .flag-icon {
+  margin-right: 0;
+  width: 25px;
+}
+
+/* line 771, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.notification-show + .dropdown-menu,
+.message-show + .dropdown-menu,
+.language-show + .dropdown-menu {
+  display: block;
+}
+
+/* line 776, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.content {
+  float: left;
+  padding: 0 20px;
+  width: 100%;
+}
+
+/* line 781, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card {
+  margin-bottom: 1.5rem;
+  border-radius: 0;
+}
+
+/* line 784, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card h4 {
+  font-size: 1.1rem;
+}
+
+/* line 789, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .user-header .media img {
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+}
+
+/* line 798, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .card-header .card-actions button {
+  display: block;
+  float: left;
+  width: 50px;
+  padding: .75rem 0;
+  margin: 0 !important;
+  color: #fff;
+  outline: 0;
+  text-align: center;
+  background: transparent;
+  border: 0;
+  border-left: 1px solid rgba(120, 130, 140, 0.4);
+}
+
+/* line 813, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .card-footer {
+  padding: 0.65rem 1.25rem;
+  background-color: #f0f3f5;
+  border-top: 1px solid #c2cfd6;
+}
+
+/* line 818, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .card-footer ul li {
+  display: table-cell;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+/* line 827, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.breadcrumbs {
+  margin-top: 0;
+}
+
+/* Tabs */
+/* line 833, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.nav-tabs a.active {
+  color: #555;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-bottom-color: transparent;
+}
+
+/* line 841, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.nav-tabs .dropdown .dropdown-menu {
+  top: 100% !important;
+}
+
+/* line 846, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.custom-tab .nav-tabs > a.active, .custom-tab .nav-tabs > .active > a:focus, .custom-tab .nav-tabs > li.active > a:hover {
+  border-color: transparent transparent;
+  color: #ff2e44;
+  position: relative;
+}
+
+/* line 851, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.custom-tab .nav-tabs > a.active > a:after, .custom-tab .nav-tabs > li.active > a:focus:after, .custom-tab .nav-tabs > li.active > a:hover:after {
+  background: #ff2e44;
+  bottom: -1px;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* line 864, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .card-header .card-actions {
+  float: right;
+}
+
+/* line 866, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .card-header .card-actions [class*="btn"] {
+  border-left: 1px solid rgba(120, 130, 140, 0.4);
+  color: #878787;
+  display: inline-block;
+  font-size: 16px;
+  float: left;
+  padding: 0 7px;
+  width: inherit;
+  text-align: center;
+}
+
+/* line 882, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-buttons .card-body p button {
+  padding-top: 0;
+  padding-left: 0;
+  padding-bottom: 0;
+}
+
+/* line 892, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-buttons .only-icon .card-body p button {
+  padding: 0;
+}
+
+/* line 898, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-buttons .social i {
+  padding: 0 10px;
+  width: inherit !important;
+}
+
+/* line 904, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-buttons .only-text p button {
+  padding: 0 .5rem;
+}
+
+/* line 911, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.buttons button {
+  margin: 2px 0;
+}
+
+/* Ribons */
+/* line 918, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.corner-ribon {
+  text-align: center;
+  width: 71px;
+  height: 71px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 20px;
+}
+
+/* line 927, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.corner-ribon i {
+  padding: 10px 0 0 35px;
+  color: #fff;
+}
+
+/* line 931, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.black-ribon {
+  background: url("../../images/twitter_corner_black.png") no-repeat;
+}
+
+/* line 934, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.blue-ribon {
+  background: url("../../images/twitter_corner_blue.png") no-repeat;
+}
+
+/* line 937, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-feed .wtt-mark {
+  color: rgba(255, 255, 255, 0.15);
+  font-size: 160px;
+  position: absolute;
+  top: 10px;
+  left: 40%;
+}
+
+/* line 944, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-feed {
+  -webkit-border-radius: 4px 4px 0 0;
+  color: #FFFFFF;
+  padding: 40px 10px 10px;
+  position: relative;
+  min-height: 170px;
+}
+
+/* line 951, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.weather-category {
+  padding: 15px 0;
+  color: #74829C;
+}
+
+/* line 954, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.weather-category ul li {
+  width: 32%;
+  text-align: center;
+  border-right: 1px solid #e6e6e6;
+  display: inline-block;
+}
+
+/* line 961, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-feed.blue-bg {
+  background: #58C9F3;
+}
+
+/* line 964, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-category {
+  display: inline-block;
+  margin-bottom: 11px;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* line 969, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-category ul li {
+  color: #bdbdbd;
+  font-size: 13px;
+}
+
+/* line 974, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-footer {
+  padding: 12px 15px;
+}
+
+/* line 977, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.twt-footer, .twt-footer a {
+  color: #d2d2d2;
+}
+
+/* Button Reset */
+/* line 982, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn, .button {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  transition: all .15s ease-in-out;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+/* Icons */
+/* line 994, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-section {
+  margin: 0 0 3em;
+  clear: both;
+  overflow: hidden;
+}
+
+/* line 999, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-container {
+  width: 240px;
+  padding: .7em 0;
+  float: left;
+  position: relative;
+  text-align: left;
+}
+
+/* line 1006, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-container [class^="ti-"],
+.icon-container [class*=" ti-"] {
+  color: #000;
+  position: absolute;
+  margin-top: 3px;
+  transition: .3s;
+}
+
+/* line 1013, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-container:hover [class^="ti-"],
+.icon-container:hover [class*=" ti-"] {
+  font-size: 2.2em;
+  margin-top: -5px;
+}
+
+/* line 1018, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-container:hover .icon-name {
+  color: #000;
+}
+
+/* line 1021, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-name {
+  color: #aaa;
+  margin-left: 35px;
+  font-size: 14px;
+  transition: .3s;
+}
+
+/* line 1027, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.icon-container:hover .icon-name {
+  margin-left: 45px;
+}
+
+/* line 1032, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.fontawesome-icon-list .page-header {
+  border-bottom: 1px solid #C9CDD7;
+  padding-bottom: 9px;
+  margin: 30px 0px 27px 0px;
+}
+
+/* line 1037, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.fontawesome-icon-list h2 {
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 1042, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.fontawesome-icon-list i {
+  font-style: 16px;
+  padding-right: 10px;
+}
+
+/* line 1050, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-box i {
+  line-height: 110px;
+}
+
+/* line 1053, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-box ul {
+  display: inline-block;
+  margin: 7px 0 0;
+  padding: 10px;
+  width: 100%;
+}
+
+/* line 1058, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-box ul li {
+  color: #949CA0;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 0 10px 0 0;
+  text-align: right;
+}
+
+/* line 1064, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-box ul li:last-child {
+  padding-left: 10px;
+  padding-right: 0;
+  text-align: left;
+}
+
+/* line 1069, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-box ul li span {
+  font-size: 14px;
+}
+
+/* line 1078, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-logo {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* line 1081, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-logo span {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+/* line 1087, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-content {
+  max-width: 540px;
+  margin: 8vh auto;
+}
+
+/* line 1091, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form {
+  background: #ffffff;
+  padding: 30px 30px 20px;
+  border-radius: 2px;
+}
+
+/* line 1096, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form h4 {
+  color: #878787;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+/* line 1101, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form .checkbox {
+  color: #878787;
+}
+
+/* line 1104, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form .checkbox label {
+  text-transform: none;
+}
+
+/* line 1107, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form .btn {
+  width: 100%;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 15px;
+  border: 0px;
+}
+
+/* line 1114, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form label {
+  color: #878787;
+  text-transform: uppercase;
+}
+
+/* line 1118, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.login-form label a {
+  color: #ff2e44;
+}
+
+/* line 1121, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-login-content {
+  margin: 0px -30px;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 30px 0px;
+  background: #fcfcfc;
+}
+
+/* line 1128, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button {
+  padding: 0 30px;
+}
+
+/* line 1130, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button .facebook {
+  background: #3b5998;
+  color: #fff;
+}
+
+/* line 1133, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button .facebook:hover {
+  background: #344e86;
+}
+
+/* line 1137, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button .twitter {
+  background: #00aced;
+  color: #fff;
+}
+
+/* line 1140, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button .twitter:hover {
+  background: #0099d4;
+}
+
+/* line 1146, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.social-button i {
+  padding: 19px;
+}
+
+/* line 1149, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.register-link a {
+  color: #ff2e44;
+}
+
+/* line 1152, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.cpu-load {
+  width: 100%;
+  height: 272px;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+/* line 1158, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.cpu-load-data-content {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+/* line 1163, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.cpu-load-data {
+  margin-bottom: 30px;
+}
+
+/* line 1166, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.cpu-load-data li {
+  display: inline-block;
+  width: 32.5%;
+  text-align: center;
+  border-right: 1px solid #e7e7e7;
+}
+
+/* line 1172, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.cpu-load-data li:last-child {
+  border-right: 0px;
+}
+
+/* line 1175, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.nestable-cart {
+  overflow: hidden;
+}
+
+/* Forms */
+/* line 1180, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.input-group-addon {
+  background-color: transparent;
+  border-left: 0;
+}
+
+/* line 1184, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.input-group-addon, .input-group-btn {
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+/* line 1188, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.input-group-addon {
+  padding: .5rem .75rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25;
+  color: #495057;
+  text-align: center;
+  background-color: #e9ecef;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: .25rem;
+}
+
+/* line 1202, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.flotTip {
+  background: #252525;
+  border: 1px solid #252525;
+  padding: 5px 15px;
+  color: #ffffff;
+}
+
+/* line 1208, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.flot-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 275px;
+  padding: 20px 15px 15px;
+  margin: 15px auto 30px;
+  background: transparent;
+}
+
+/* line 1216, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.flot-pie-container {
+  height: 275px;
+}
+
+/* line 1219, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.flotBar-container {
+  height: 275px;
+}
+
+/* line 1222, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.flot-line {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  line-height: 1.2em;
+}
+
+/* line 1228, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.legend table {
+  border-spacing: 5px;
+}
+
+/* line 1231, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#chart1,
+#flotBar,
+#flotCurve {
+  width: 100%;
+  height: 275px;
+}
+
+/* line 1237, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.morris-hover {
+  position: absolute;
+  z-index: 1;
+}
+
+/* line 1241, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.morris-hover.morris-default-style .morris-hover-row-label {
+  font-weight: bold;
+  margin: 0.25em 0;
+}
+
+/* line 1245, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.morris-hover.morris-default-style .morris-hover-point {
+  white-space: nowrap;
+  margin: 0.1em 0;
+}
+
+/* line 1249, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.morris-hover.morris-default-style {
+  border-radius: 2px;
+  padding: 10px 12px;
+  color: #666;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  color: #fff !important;
+}
+
+/* line 1257, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.morris-hover-point {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+/* line 1260, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+#morris-bar-chart {
+  height: 285px;
+}
+
+/* line 1264, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.map, .vmap {
+  width: 100%;
+  height: 400px;
+}
+
+/* line 1269, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn-toolbar {
+  float: left !important;
+}
+
+/* line 1271, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn-toolbar .btn-outline-secondary:not([disabled]):not(.disabled):active,
+.btn-toolbar .btn-outline-secondary:not([disabled]):not(.disabled).active,
+.btn-toolbar .show > .btn-outline-secondary.dropdown-toggle {
+  background-color: #212529;
+  border-color: #212529;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* line 1280, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.btn-toolbar .btn-outline-secondary:hover {
+  background-color: #212529;
+  border-color: #212529;
+  color: #fff;
+}
+
+/*    Widget One
+---------------------------*/
+/* line 1298, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dib {
+  display: inline-block;
+}
+
+/* line 1301, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-one .stat-icon {
+  vertical-align: top;
+}
+
+/* line 1304, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-one .stat-icon i {
+  font-size: 30px;
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 100px;
+  padding: 15px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+/* line 1313, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-one .stat-content {
+  margin-left: 30px;
+  margin-top: 7px;
+}
+
+/* line 1317, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-one .stat-text {
+  font-size: 14px;
+  color: #868e96;
+}
+
+/* line 1321, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-one .stat-digit {
+  font-size: 24px;
+  color: #373757;
+}
+
+/*    Widget Two
+---------------------------*/
+/* line 1327, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two {
+  text-align: center;
+}
+
+/* line 1330, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two .stat-digit {
+  font-size: 1.75rem;
+  font-weight: 500;
+  color: #373757;
+}
+
+/* line 1335, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two .stat-digit i {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+/* line 1339, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two .stat-text {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #868e96;
+}
+
+/* line 1344, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two .progress {
+  height: 8px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  box-shadow: none;
+}
+
+/* line 1350, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-two .progress-bar {
+  box-shadow: none;
+}
+
+/*    Widget Three
+---------------------------*/
+/* line 1355, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-three .stat-icon {
+  display: inline-block;
+  padding: 33px;
+  position: absolute;
+  line-height: 21px;
+}
+
+/* line 1361, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-three .stat-icon i {
+  font-size: 30px;
+  color: #ffffff;
+}
+
+/* line 1365, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-three .stat-content {
+  text-align: center;
+  padding: 15px;
+  margin-left: 90px;
+}
+
+/* line 1370, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-three .stat-digit {
+  font-size: 30px;
+}
+
+/* line 1373, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-three .stat-text {
+  padding-top: 4px;
+}
+
+/* line 1376, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.home-widget-three .stat-icon {
+  line-height: 19px;
+  padding: 27px;
+}
+
+/* line 1380, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.home-widget-three .stat-digit {
+  font-size: 24px;
+  font-weight: 300;
+  color: #373757;
+}
+
+/* line 1385, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.home-widget-three .stat-content {
+  text-align: center;
+  margin-left: 60px;
+  padding: 13px;
+}
+
+/* line 1390, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-four {
+  position: relative;
+}
+
+/* line 1393, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-four .stat-icon {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+}
+
+/* line 1398, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-four i {
+  display: block;
+  font-size: 36px;
+}
+
+/* line 1402, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-four .stat-content {
+  margin-left: 40px;
+  text-align: center;
+}
+
+/* line 1406, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-four .stat-heading {
+  font-size: 20px;
+}
+
+/* line 1409, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-five .stat-icon {
+  border-radius: 100px;
+  display: inline-block;
+  position: absolute;
+}
+
+/* line 1414, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-five i {
+  border-radius: 100px;
+  display: block;
+  font-size: 36px;
+  padding: 30px;
+}
+
+/* line 1420, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-five .stat-content {
+  margin-left: 100px;
+  padding: 24px 0;
+  position: relative;
+  text-align: right;
+  vertical-align: middle;
+}
+
+/* line 1427, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-five .stat-heading {
+  text-align: right;
+  padding-left: 80px;
+  font-size: 20px;
+  font-weight: 200;
+}
+
+/* line 1433, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six {
+  position: relative;
+}
+
+/* line 1436, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six .stat-icon {
+  display: inline-block;
+  position: absolute;
+  top: 5px;
+}
+
+/* line 1441, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six i {
+  display: block;
+  font-size: 36px;
+}
+
+/* line 1445, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six .stat-content {
+  margin-left: 40px;
+  text-align: center;
+}
+
+/* line 1449, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six .stat-heading {
+  font-size: 16px;
+  font-weight: 300;
+}
+
+/* line 1453, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-six .stat-text {
+  font-size: 12px;
+  padding-top: 4px;
+}
+
+/* line 1457, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .stat-heading {
+  text-align: center;
+}
+
+/* line 1460, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .gradient-circle {
+  text-align: center;
+  position: relative;
+  margin: 30px auto;
+  display: inline-block;
+  width: 100%;
+}
+
+/* line 1467, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .gradient-circle i {
+  position: absolute;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 35px;
+  font-size: 30px;
+}
+
+/* line 1475, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .stat-footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+/* line 1479, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .stat-footer .stat-count {
+  padding-left: 5px;
+}
+
+/* line 1482, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .count-header {
+  color: #252525;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+/* line 1488, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .stat-count {
+  font-size: 18px;
+  font-weight: 400;
+  color: #252525;
+}
+
+/* line 1493, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .analytic-arrow {
+  position: relative;
+}
+
+/* line 1496, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-seven .analytic-arrow i {
+  font-size: 12px;
+}
+
+/* Stat widget Eight
+--------------------------- */
+/* line 1501, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight {
+  padding: 15px;
+}
+
+/* line 1504, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .header-title {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+/* line 1508, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .ti-more-alt {
+  color: #878787;
+  cursor: pointer;
+  left: -5px;
+  position: absolute;
+  transform: rotate(90deg);
+}
+
+/* line 1515, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .stat-content {
+  margin-top: 50px;
+}
+
+/* line 1518, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .stat-content .ti-arrow-up {
+  font-size: 30px;
+  color: #28a745;
+}
+
+/* line 1522, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .stat-content .stat-digit {
+  font-size: 24px;
+  font-weight: 300;
+  margin-left: 15px;
+}
+
+/* line 1527, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .stat-content .progress-stats {
+  color: #aaadb2;
+  font-weight: 400;
+  position: relative;
+  top: 10px;
+}
+
+/* line 1533, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-eight .progress {
+  margin-bottom: 0;
+  margin-top: 30px;
+  height: 7px;
+  background: #EAEAEA;
+  box-shadow: none;
+}
+
+/* line 1540, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-nine .all-like {
+  float: right;
+}
+
+/* line 1543, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-nine .stat-icon i {
+  font-size: 22px;
+}
+
+/* line 1546, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-nine .stat-text {
+  font-size: 14px;
+}
+
+/* line 1549, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-nine .stat-digit {
+  font-size: 14px;
+}
+
+/* line 1552, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.stat-widget-nine .like-count {
+  font-size: 30px;
+}
+
+/* line 1555, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.horizontal {
+  position: relative;
+}
+
+/* line 1558, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.horizontal:before {
+  background: #ffffff;
+  bottom: 0;
+  content: "";
+  height: 38px;
+  left: 0;
+  margin: 0 auto;
+  position: absolute;
+  right: 0;
+  width: 1px;
+}
+
+/* line 1569, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.widget-ten span i {
+  color: #ffffff;
+  opacity: 0.5;
+}
+
+/* line 1573, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.widget-ten h5 {
+  color: #ffffff;
+}
+
+/* line 1576, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.widget-ten p {
+  color: #ffffff !important;
+  opacity: 0.75;
+}
+
+/* Mixed Styles */
+/* line 1584, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.badges h1, .badges h2, .badges h3, .badges h4, .badges h5, .badges h6 {
+  margin: 5px 0;
+}
+
+/* line 1589, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.vue-lists ul, .vue-lists ol {
+  padding-left: 30px;
+}
+
+/* line 1594, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.card .dropdown.float-right .dropdown-menu {
+  left: inherit !important;
+  right: 0 !important;
+  top: 93% !important;
+}
+
+/* line 1601, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dataTables_paginate .pagination {
+  border-radius: 0;
+}
+
+/* line 1603, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dataTables_paginate .pagination li {
+  border-radius: 0 !important;
+}
+
+/* line 1605, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dataTables_paginate .pagination li a {
+  border-radius: 0 !important;
+  color: #272c33;
+}
+
+/* line 1610, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dataTables_paginate .pagination li.active a {
+  background: #272c33;
+  border-color: #272c33;
+  color: #fff;
+}
+
+/* line 1617, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+.dataTables_paginate .pagination li:hover a {
+  background: #272c33;
+  border-color: #272c33;
+  color: #fff;
+}
+
+@media (max-width: 1368px) {
+  /* line 1632, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .content {
+    padding: 0 15px;
+  }
+  /* line 1635, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .twt-category {
+    margin-bottom: 0;
+  }
+  /* line 1638, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .twt-feed {
+    max-height: 155px;
+  }
+  /* line 1640, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .twt-feed img {
+    height: 75px;
+    width: 75px;
+  }
+  /* line 1645, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .stat-widget-one .stat-content {
+    margin-left: 15px;
+  }
+  /* line 1648, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .card-body {
+    padding: 15px;
+  }
+  /* line 1651, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .badges button {
+    margin: 2px 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  /* line 1657, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel {
+    padding: 0 20px;
+    width: 200px;
+  }
+  /* line 1661, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .navbar .navbar-nav li > a .menu-icon {
+    width: 30px;
+  }
+  /* line 1664, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .navbar .navbar-nav li.menu-item-has-children .sub-menu {
+    padding: 0 0 0 30px;
+  }
+  /* line 1667, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .navbar .navbar-nav li.menu-item-has-children .sub-menu a {
+    padding: 2px 0 2px 25px;
+  }
+  /* line 1671, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .card .card-header {
+    position: relative;
+  }
+  /* line 1673, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .card .card-header strong {
+    display: block;
+  }
+  /* line 1676, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .card .card-header small {
+    float: left;
+  }
+  /* line 1679, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .card .card-header .card-actions {
+    right: 0;
+    top: .75rem;
+    position: absolute;
+  }
+}
+
+@media (max-width: 992px) {
+  /* line 1689, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  [class*="col"].no-padding {
+    flex: none;
+  }
+}
+
+@media (max-width: 575.99px) {
+  /* line 1694, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  body {
+    display: block;
+  }
+  /* line 1697, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel {
+    display: block;
+    height: auto;
+    min-height: inherit;
+    padding: 0 15px;
+    width: 100%;
+  }
+  /* line 1703, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar {
+    margin-bottom: 0;
+  }
+  /* line 1705, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-header {
+    height: 50px;
+  }
+  /* line 1708, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-brand {
+    border-bottom: none;
+    display: inline-block;
+    float: left;
+    line-height: 1;
+    margin-top: 11px;
+    min-height: inherit;
+  }
+  /* line 1715, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-brand.hidden {
+    display: none;
+  }
+  /* line 1719, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-toggler {
+    float: right;
+    margin-top: 8px;
+  }
+  /* line 1724, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-nav li > a {
+    padding: 5px 0;
+  }
+  /* line 1727, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .navbar-nav li.menu-item-has-children a:before {
+    top: 5px;
+  }
+  /* line 1731, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  aside.left-panel .navbar .menu-title {
+    line-height: 30px;
+    padding: 0;
+  }
+  /* line 1737, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .menutoggle {
+    display: none;
+  }
+  /* line 1740, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel {
+    display: block;
+  }
+  /* line 1742, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel header.header {
+    padding: 5px 10px 1px 5px;
+  }
+  /* line 1744, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel header.header div[class*="col"] {
+    padding: 0;
+    width: initial;
+  }
+  /* line 1748, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel header.header .col-sm-7 {
+    float: left;
+  }
+  /* line 1751, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel header.header .col-sm-5 {
+    float: right;
+  }
+  /* line 1755, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs {
+    padding: 10px 15px;
+  }
+  /* line 1757, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs div[class*="col"] {
+    padding: 0;
+  }
+  /* line 1760, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs .page-header {
+    min-height: inherit;
+    padding: 0;
+  }
+  /* line 1763, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs .page-header h1 {
+    padding: 5px 0;
+  }
+  /* line 1766, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs .page-header.float-right {
+    float: left;
+    text-align: left;
+    width: 100%;
+  }
+  /* line 1770, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .breadcrumbs .page-header.float-right .breadcrumb {
+    padding: 0;
+  }
+  /* line 1776, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content {
+    padding: 0 10px;
+  }
+  /* line 1779, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .card .card-title {
+    margin-bottom: 0;
+  }
+  /* line 1782, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .card .card-footer {
+    padding: 15px 5px;
+  }
+  /* line 1784, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .card .card-footer ul {
+    margin: 0;
+  }
+  /* line 1786, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .card .card-footer ul li {
+    float: left;
+    margin: 5px 0;
+    padding: 0 10px;
+    width: 33.33%;
+  }
+  /* line 1795, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content div[class*="col"] {
+    padding: 0;
+  }
+  /* line 1799, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .row div[class*="col"] {
+    padding: 0 10px;
+  }
+  /* line 1805, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .nav-tabs .nav-link,
+  .right-panel .content .nav-pills .nav-link {
+    padding: .5rem;
+  }
+  /* line 1809, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content .tab-content.pl-3 {
+    padding-left: 0 !important;
+  }
+  /* line 1812, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content #bootstrap-data-table_wrapper {
+    font-size: 14px;
+    padding: 0;
+  }
+  /* line 1815, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content #bootstrap-data-table_wrapper div[class*="col"] {
+    padding: 0;
+  }
+  /* line 1818, C:/Users/VENKI/Desktop/sufee-admin-dashboard-master/assets/scss/style.scss */
+  .right-panel .content #bootstrap-data-table_wrapper .table td, .right-panel .content #bootstrap-data-table_wrapper .table th {
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=../css/output/style.map */
+
+.help-block{
+  color: #FF671F;
+}
+.mt-15{
+  margin-top:15px;
+}
+.thumbnail{
+  border: 1px solid #C0C0C0;
+  border-radius: 5px;
+}
+.thumbnail .caption{
+  padding: 0 5px;
+}

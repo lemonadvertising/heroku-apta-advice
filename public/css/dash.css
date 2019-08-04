@@ -1,0 +1,688 @@
+html,
+body {
+    height: 100%;
+    background-color: #f8f3f0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+    color: #121212;
+    font-family: 'Conv_GOTHAM-LIGHT';
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 3.8em;
+    color: #d56331;
+    margin-bottom: 3px;
+}
+
+h1 .small {
+    font-size: 0.4em;
+}
+
+h1 a {
+    text-decoration: none
+}
+
+h2 {
+    font-size: 1.5em;
+    color: #d56331;
+}
+
+h3 {
+    text-align: center;
+    color: #d56331;
+}
+
+a {
+    color: #000;
+    font-size: 1.5em;
+}
+
+li {
+    list-style: none;
+}
+.DateTimeGroup {
+    clear: both;
+    margin-top: 10px;
+}
+@media only screen and (max-width: 720px) {
+    body {
+        font-size: 75%;
+    }
+    .DateTimeGroup {
+        width: 100%;
+    }
+    .row>div {
+        margin-top: 10px;
+        padding: 0;
+    }
+    .heading {
+        display: block;
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .fbData,
+    .tweetData,
+	.instaData{
+        width: 70px !important;
+    }
+    .navbar-default .download-report {
+        border: none!important;
+    }
+    .margin-top-90 {
+        padding-top: 50px;
+    }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1366px) {
+    body {
+        font-size: 95%;
+    }
+    .padding-r-0 {
+        padding-right: 0!important;
+    }
+    .DateTimeGroup {
+        width: 75%;
+        float: left;
+    }
+    .margin-top-90 {
+        padding-top: 90px;
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+    body {
+        font-size: 100%;
+    }
+    .padding-r-0 {
+        padding-right: 0!important;
+    }
+    .DateTimeGroup {
+        width: 80%;
+        float: left;
+    }
+    .margin-top-90 {
+        padding-top: 90px;
+    }
+}
+
+.navbar-default {
+    background-color: #FFFFFF;
+}
+
+.navbar-default li a {
+    background-color: transparent !important;
+}
+
+.navbar-default .brand_name {
+    font-family: 'Conv_PILLGOTHIC';
+    font-size: 3.0em;
+    color: #ea232a;
+    padding: 20px 0 0 20px;
+}
+
+.nav>li {
+    padding: 5px 0 5px 0;
+}
+
+.log-out {
+    background-color: #ea232a;
+}
+
+.log-out a span {
+    font-size: 1.5em !important;
+}
+
+.navbar-default .download-report {
+    border-left: 1px #d6d6d6 solid;
+    border-right: 1px #d6d6d6 solid;
+}
+
+.band-logo-img {
+    width: 50px;
+    height: 50px;
+    display: block;
+    float: right;
+    margin: 0 20px 0 0;
+}
+
+.band-logo-img img {
+    width: 50px;
+    max-height: 55px
+}
+
+.log-out a {
+    color: #FFFFFF !important;
+}
+
+.brand-details a {
+    float: left;
+    overflow: hidden;
+}
+
+.brand-details {
+    overflow: hidden;
+}
+
+.containerDiv {
+    width: 100%;
+    border: 1px #d6d6d6 solid;
+    padding: 10px 0 10px 0;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.row {
+    margin: 0!important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+
+.Browserstat, .custome-pie {
+    padding: 10px 0 0 0;
+    width: 300px;
+    margin: auto;
+}
+
+.DescBrowser, .Descustome-pie {
+    width: 220px;
+	margin: auto;
+	height: auto;
+	overflow: hidden;
+	padding: 20px 0 0 0;
+	font-size: 1.45em;
+}
+
+.cat-heading {
+    width: 100%;
+    display: block;
+    padding: 0;
+    border-bottom: 2px #ea232a solid;
+    float: left;
+    color: #121212;
+    font-size: 2em;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+}
+
+.heading {
+    padding: 10px 20px 0 20px;
+    float: left
+}
+
+.heading-download{
+    padding-right: 20px;
+    font-size: 1em;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+    text-decoration: none;
+}
+
+.cat-heading li {
+    width: 30%;
+    display: block;
+    float: left;
+    margin-left: 10px;
+}
+
+.padding-20 {
+    padding: 0 0 20px 0;
+}
+
+.padding-0 {
+    padding: 0 !important;
+}
+
+.activationChart {
+    position: relative;
+    margin: auto;
+    width: 95%;
+    height: auto;
+    overflow: hidden;
+}
+
+.Deviceliquid {
+    width: 95%;
+    position: relative;
+    margin: auto;
+    height: auto;
+    overflow: hidden
+}
+
+.Deviceliquid>div {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    padding: 10px 0 0 0;
+}
+
+.Deviceliquid div li {
+    float: left;
+}
+
+.Deviceliquid div li.chart {
+    width: 50%;
+}
+
+.Deviceliquid div li.data {
+    width: 50%;
+    color: #121212;
+    font-size: 1.5em;
+    padding: 20px 0 0 0;
+}
+
+.DestopUserNo {
+    float: left;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+    font-size: 1.5em;
+}
+
+.DeviceName {
+    padding: 0 0 0 10px;
+    overflow: hidden;
+    float: left
+}
+
+.dextopIcon {
+    display: block;
+    float: left;
+    font-size: 2.0em;
+    padding: 10px 0 0 5px;
+}
+
+.social-chart {
+    margin: 20px 0 0 0;
+    width: 220px;
+    float: left;
+}
+
+.fbData,
+.tweetData,
+.instaData{
+    float: right;
+    width: 75px;
+    padding: 50px 0 0 0;
+}
+
+.tweetno,
+.fbno,
+.Instano{
+    font-size: 1.5em;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+}
+
+.tweetData .tweetIcon {
+    font-size: 3.0em;
+    color: #5bc8ec;
+}
+
+.fbData .fbIcon {
+    font-size: 3.0em;
+    color: #4d6299;
+}
+
+.instaData .InstaIcon {
+    font-size: 3.0em;
+    color: #0d3c5f;
+}
+
+.LocationDiv {
+    position: relative;
+    margin: auto;
+    width: 90%;
+    overflow: hidden;
+    color: #121212;
+    padding-top: 10px;
+}
+
+.LocationDiv .LocationIcon {
+    width: 40px;
+    font-size: 3.0em;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    padding: 15px 0 0 0;
+}
+
+.LocationDiv .LocationName {
+    width: 80%;
+    float: left;
+    height: auto;
+    overflow: hidden;
+    font-size: 1.5em;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+}
+
+.LocationpartNo {
+    float: right;
+}
+
+.footer {
+    background-color: #FFFFFF;
+    color: #121212;
+    margin: 20px 0 0 0;
+    font-family: 'Conv_GOTHAM-MEDIUM';
+    font-size: 1em;
+    border: 1px #d6d6d6 solid;
+    padding: 10px 0 3px 0;
+}
+
+.Formfill,
+.Timeduration {
+    width: 95%;
+    margin: auto;
+    padding: 15px 0 15px 0;
+    overflow: hidden;
+    font-size: 2.0em;
+}
+
+.TotalTimeData,
+.AvgTimeData {
+    font-family: 'Conv_GOTHAM-MEDIUM';
+}
+
+.TotalTime,
+.AvgTime {
+    width: 100%;
+}
+
+.FormIcon {
+    width: 30px;
+    height: auto;
+    float: left;
+    padding: 10px 0 0 0;
+}
+
+.FormNo {
+    width: 80%;
+    height: auto;
+    float: left
+}
+
+.Formfill {
+    width: 80% !important;
+}
+
+.chrome {
+    color: #79d58a;
+}
+
+.color-sign {
+    font-size: 2.0em;
+    top: 0;
+}
+
+.firefox {
+    color: #df5a45;
+}
+
+.safari {
+    color: #f79449;
+}
+
+.internet {
+    color: #85d1fb;
+}
+
+.others {
+    color: #990099;
+}
+
+.slice-1{
+	color: #90ed7d;
+}
+.slice-2{
+	color: #f7a35c;
+}
+.slice-3{
+	color: #8085e9;
+}
+.slice-4{
+	color: #f15c80;
+}
+.slice-5{
+	color: #e4d354;
+}
+.slice-6{
+	color: #2b908f;
+}
+.slice-7{
+	color: #f45b5b;
+}
+.slice-8{
+	color: #91e8e1;
+}
+.slice-9{
+	color: #7cb5ec;
+}
+.slice-10{
+	color: #434348;
+}
+.slice-11{
+	color: #4CAF50;
+}
+.slice-12{
+	color: #AB4B4B;
+}
+.slice-13{
+	color: #990099;
+}
+.slice-14{
+	color: #795548;
+}
+.slice-15{
+	color: #9E9E9E; 
+}
+	
+
+path.slice {
+    stroke-width: 2px;
+}
+
+path.slice {
+    stroke-width: 2px;
+}
+
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
+
+svg text.percent {
+    fill: white;
+    text-anchor: middle;
+    font-size: 14px;
+    font-family: 'Conv_GOTHAM-LIGHT';
+}
+
+.background {
+    fill: #FFFFFF;
+    fill-opacity: 0.01;
+}
+/*Radial progress */
+
+.component {
+    fill: #e1e1e1;
+}
+
+.component .label {
+    font-family: 'Conv_GOTHAM-MEDIUM';
+    text-anchor: middle;
+    font-size: 1.5em;
+    fill: #121212;
+}
+
+.arc {
+    stroke-weight: 0.1;
+    fill: #4e8fff;
+}
+
+.arc2 {
+    stroke-weight: 0.1;
+    fill: #3660b0;
+}
+
+.label {
+    font-family: Myriad, "Helvetic Neue", Helvetica, Arial;
+    text-anchor: middle;
+}
+
+.radial-svg {
+    display: block;
+    margin: 0 auto;
+}
+
+.twitter .arc {
+    stroke-weight: 0.1;
+    fill: #5bc8ec;
+}
+
+.facebook .arc {
+    stroke-weight: 0.1;
+    fill: #4d6299;
+}
+
+.instagram .arc {
+    stroke-weight: 0.1;
+    fill: #0d3c5f;
+}
+/*-----------------------------Login Page---------------------------*/
+
+.panel-heading {
+    padding: 5px 15px;
+}
+
+.panel-footer {
+    padding: 1px 15px;
+    color: #A0A0A0;
+}
+
+.ErrorField {
+    border-color: #ebccd1 !important;
+    background-color: #f2dede !important;
+}
+
+.ValidationErrors {
+    color: #ea232a;
+}
+
+.ValidationError{
+	 color: #ea232a;
+}
+
+.not-found {
+	width: 70%;
+    margin: 170px auto;
+    margin-bottom: 308px;
+}
+
+.not-found-data {
+    margin: 110px auto 400px;
+    width: 50%;
+}
+
+.formcontrol2 {
+    margin-bottom: 5px;
+}
+
+.barnd-table {
+    overflow-x: visible;
+    font-size: 16px;
+}
+
+.icon-size {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.bitly-link {
+    font-size: 16px !important;
+}
+
+input[type=checkbox].pull-right {
+    width: 20px;
+    height: 20px;
+    margin: 10px 10px 0px;
+}
+
+.margin-bottom-10 {
+    font-family: 'Conv_GOTHAM-MEDIUM';
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+#dataTable1_wrapper {
+    font-family: 'Arial';
+    margin-top: 65px;
+    font-size: 12px;
+}
+
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color:#F8F3F0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+    filter: alpha(opacity=90);
+    -moz-opacity: 0.9;
+    -khtml-opacity: 0.9;
+    opacity: 0.9;
+}
+.loader i{
+    margin-top:15%;
+}
+.heading-lebel{
+	font-family: 'Conv_GOTHAM-LIGHT';
+	font-size: 14px;
+}
+.submitbtn{
+     margin-top: 10px;   
+}
+.uploadfile{
+    width: 100% !important;
+}
+.thumb-img{
+	float: left;
+	max-height: 100px;
+	max-width: 100px;
+}
+.thumb-margin{
+	width: 100%;
+	height: 130px;
+	padding: 15px;
+	margin-top:15px;
+	background-color: #F8F3F0;
+	border: 1px solid #e3e3e3;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+}
+
+
+.dataTables_wrapper {
+    overflow-x: scroll; 
+}
+.my-form-group{
+    width: 100%;
+    margin: 10px 0;
+    
+}
+@media only screen and (min-width: 320px) {
+    .form-inline .form-control{
+        width: 95%;
+    }
+}
+#dataTable1_filter,#dataTable1_paginate{
+    float: right;
+}

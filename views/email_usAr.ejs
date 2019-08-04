@@ -1,0 +1,284 @@
+
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+	<title>تواصلي معنا</title>
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="styleemail.css">
+  	<style type="text/css">
+        @import url("https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css");
+        body{
+            background-color: white;
+        }
+        .container{
+            background-color: white;
+            width: 75%;
+        }
+        .secondSection{
+            height: auto;
+        }
+        .input{
+            /*border-right: none;
+            border-left: none;
+            border-top: none;*/
+            border: 2px solid #80808061;
+            font-size: 20px;
+            outline: none;
+            width: 100%;
+            height: 50px;
+            color: #948e8e;
+            margin-bottom: 2%;
+            padding-left: 2%;
+        }
+        .text{
+            font-size: 30px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+			text-align: right;
+        }
+        .txt{
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 0.5rem;
+			text-align: right;
+        }
+        
+        .space_bottom{
+            margin-bottom: 10px;
+        }
+        
+        .btns{
+            width: 12%;
+        }
+        
+        .text-danger{
+            float: left;
+            font-size: 20px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        .mail{
+            float: left;
+        }
+        #firstname{
+            width: 49%;
+            float: left;
+            margin-right: 2%;
+            color: #948e8e;
+        }
+        #lastname{
+            width: 49%;
+            color: #948e8e;
+        }
+        .btndiv{
+            text-align: center;
+        }
+        .submit{
+            height: 50px;
+            font-size: 25px;
+            width: 20%;
+            outline: none;
+        }
+        #message{
+            height: 30vh;
+            margin-bottom: 0;
+        }
+        #alert{
+            font-size: 20px;
+            color: red;
+            /* border: 1px solid black; */
+            height: 4vh;
+            /*margin-bottom: 0;*/
+        }
+		.text_Ar{
+			    position: absolute;
+				top: 2%;
+				left: 14%;
+				font-size: 20px;
+		}
+		.container{
+			direction: rtl;
+		}
+        @media screen and (max-width: 992px) {
+            .container{
+                width: 95%;
+            }
+            #firstname{
+                width: 100%;
+                float: none;
+                margin-right: 0;
+            }
+            #lastname{
+                width: 100%;
+            }
+            .btns{
+                width: 33%;
+            }
+            .submit {
+                font-size: 22px;
+                width: 40%;
+            }
+            .input{
+                height: 7vh;
+            }
+            #message {
+                height: 27vh;
+            }
+			
+        }
+    </style>
+</head>
+<body>
+	<div class="secondSection">
+			<a href="https://danone-apta-advice.herokuapp.com/fb/email1" class="text_Ar">English</a>
+		<div class="container">
+			
+			<p class="text">تواصلي معنا</p>
+
+			<p class="txt">كيف يمكننا مساعدتك</p>
+			<form method="POST" id="submit" action="https://danone-apta-advice.herokuapp.com/fb/email1">
+                <div class="form-group">
+
+                    <select id="topic" class="form-control space_bottom">
+
+                        <option value="" selected="selected" disabled="disabled">اختاري موضوع</option>
+
+                        <option value="Breastfeeding">الرضاعة الطبيعية</option>
+
+                        <option value="Childcare">العناية بالطفل</option>
+
+                        <option value="General Question">سؤال عام</option>
+
+                        <option value="Pregnancy">الحمل</option>
+
+                        <option value="Product quality">جودة المنتج</option>
+
+                        <option value="Weaning">الفطام</option>
+
+                        <option value="Other">غير ذلك</option>
+
+                    </select>
+
+                    <input class="form-control space_bottom" id="firstname" type="text" name="firstname" placeholder="الاسم الأول">
+
+                    <input class="form-control space_bottom" id="lastname" type="text" name="lastname" placeholder="اسم العائلة">
+
+                    <input class="form-control space_bottom" type="text" name="email" id="email" placeholder="البريد الالكتروني">
+
+                    <textarea class="form-control space_bottom" id="message" placeholder="رسالتك"></textarea>
+
+                    <div class="btndiv">
+
+                        <p id="alert"></p>
+
+                        <button class="btn btn-primary btns" >ارسال</button>
+
+                    </div>
+                </div>
+            </form>
+
+		</div>
+
+    </div>
+
+    <script>
+
+    	$(document).ready(function() {
+
+    		var topic;
+
+    		var fname;
+
+			var lname;
+
+			var email;
+
+			var message;
+
+    		var filter = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+
+
+
+    		$("#submit").submit(function (e) {
+                e.preventDefault();
+    			topic = $('#topic').val();
+
+				fname = $('#firstname').val();
+
+    			lname = $('#lastname').val();
+
+    			email = $('#email').val();
+
+    			message = $('#message').val();
+
+    			if (topic == "" || topic == null) {
+
+				  	$('#alert').html("*Choose a topic");
+
+				}else if (fname == "" || fname == null) {
+
+				  	$('#alert').html("*Enter Your First name");
+
+		        }else if (lname == "" || lname == null) {
+
+				  	$('#alert').html("*Enter Your Last name");
+
+		        }else if (email == "" || filter.test(email) == false) {
+
+				  	$('#alert').html("*Enter valid mail ID");
+
+		        }else if (message == "" || message == null) {
+
+				  	$('#alert').html("*Enter the message");
+
+		        }else{
+
+				  	$('#alert').html("");
+
+    				/*console.log(topic);
+
+	    			console.log(fname);
+
+	    			console.log(lname);
+
+	    			console.log(email);
+
+	    			console.log(message);*/
+                    
+                    
+                    $.ajax({
+                      type: 'POST',
+                      url: "/fb/email1",
+                      data: {'topic':topic,'fname':fname,'lname':lname,'email':email,'message':message},
+                      dataType: "html",
+                      success: function(resultData) {
+                          window.close();
+                            setTimeout(function () {
+                                var url="https://m.me/AptaAdvice";
+                                window.location=url;
+                            }, 300);
+                      },
+                      error: function(err) { 
+                          //console.log(err) 
+                          window.close();
+                          setTimeout(function () {
+                            var url="https://m.me/AptaAdvice";
+                            window.location=url;
+                        }, 300);
+                      }
+                    });
+
+				}
+    		});
+
+    	});
+
+    </script>
+
+</body>
+
+</html>

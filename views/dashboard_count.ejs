@@ -1,0 +1,427 @@
+
+
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <link rel="stylesheet" href="/css/dashboard.css">
+    <link rel="stylesheet" href="/css/fonts.css">
+    <style>
+        .btn-margin{
+            border-radius: 5px;
+            margin-bottom: 7px;
+        }
+        
+        a:hover, a:focus {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+   <div class="content">
+      
+      <a href="/dashboard/count_report" class="btn btn-primary btn-md btn-margin">Download</a>
+      
+       <div class="row">
+
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Unique Get Started</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= unique_get_started_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Drop off</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= drop_off %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Clicks on Get Started</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= get_started_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Clicks on English</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= en_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Clicks on Arabic</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= ar_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pregnancy(from menu)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= m_preg_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pregnancy</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= preg_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+           <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pregnancy Article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= preg_article_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pre-pregnancy</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= pre_preg_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Pre-pregnancy Article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= pre_preg_article_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Motherhood</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= motherhood_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Motherhood Article</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= motherhood_article_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 1st</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_1st_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 1st more options</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_1st_more_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 2nd</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_2nd_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 2nd more options</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_2nd_more_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 3rd</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_3rd_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Trimester 3rd more options</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= trim_3rd_more_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Next(DOB form)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= next_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Menu</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= main_menu_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Menu(footer)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= menu_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Manage subscription</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= subscription_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Email us</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= email_us_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Go to website</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= website_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Buy now(footer)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= buy_now_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Email us(footer)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= email_us_menu_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Privacy policy</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= p_policy_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">contact careline</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= careline_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">contact careline(footer)</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= careline_m_click %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+            <div class="col-sm-4 margin-top-10">
+               <div class="containerDiv">
+                   <div class="cat-heading padding-20">
+                       <span class="heading">Total Subscribers</span></div>
+                   <div class="Formfill">
+                       <div class="FormNo">
+                           <li class="text-center"><span class="AvgTimeData"><%= subscriberCount %></span></li>
+                       </div>
+                   </div>
+               </div>
+           </div>
+           
+
+       </div>
+       <div style="width:100%; height1px; margin-bottom:25px;"></div>
+</div>
+</div>
+<!-- /#right-panel -->
+<!-- Right Panel -->
+<% include partials/scripts %>
+</body>
+
+</html>

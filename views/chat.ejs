@@ -1,0 +1,354 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+    
+        div.form {
+            background: #006ab4;
+            padding: 3px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    
+        div.form input {
+            border: 0;
+            padding: 10px;
+            width: 100%;
+        }
+        #end-conversation{
+            background-color: #d3007d;
+            border-radius: 50%;
+        }
+        
+    
+        div.form button {
+            background: #002677;
+            border: none;
+            padding: 10px 15px;
+            color: #ffffff;
+        }
+    
+        #messages {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            margin-bottom:75px;
+        }
+    
+        #messages li {
+            padding: 5px 10px;
+        }
+    
+        #messages li:nth-child(odd) {
+            background: #eee;
+        }
+    
+        #room-container {
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: #ffffff;
+        }
+    
+        .room-item {
+            border: 1px solid #000000;
+            width: 120px;
+            text-align: center;
+            margin: 5px;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+    
+        .room-item:hover,
+        .room-item.active {
+            background-color: #eee;
+        }
+    
+        div.representative {
+            clear: both;
+            margin: 15px 0px;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .representative-body {
+            float: right;
+            background-color: #FFF;
+            margin: 0px 6px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px;
+            color: #d3007d;
+        }
+    
+        div.representative::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 5px solid transparent;
+            border-left: 6px solid #FFF;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    
+        div.user {
+            clear: both;
+            margin: 15px 0px;
+            position: relative;
+            overflow: hidden;
+        }
+    
+        .user-body {
+            float: left;
+            background-color: #006ab4;
+            margin: 0px 6px;
+            border-top-right-radius: 10px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 10px;
+            color: #FFF;
+        }
+    
+        div.user::before {
+            content: "";
+            width: 0;
+            height: 0;
+            border-bottom: 5px solid transparent;
+            border-right: 6px solid #006ab4;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+    
+        .name {
+            font-weight: bold;
+        }
+    
+        .representative .name {
+            color: #d3007d;
+            text-align: right;
+        }
+    
+        .user .name {
+            color: #FFF;
+        }
+    
+        .new_thread {
+            margin: 10px auto;
+            width: 500px; max-width: 80%;
+            max-width: 80%;
+            text-align: center;
+            padding: 5px 20px;
+            background-color: darkgray;
+            border-radius: 17px;     
+            color: #FFF;
+            clear: both;
+        }
+        .thread_end{
+            widows: 100%;
+            height: 8px;
+            border-top: 1px solid #d3007d;
+            border-bottom: 1px solid #d3007d
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+        <!-- /#left-panel -->
+        <!-- Right Panel -->
+        <div id="right-panel" class="right-panel" style="position: relative;">
+            <!-- Header-->
+            <header id="header" class="header">
+                <div class="header-menu">
+                    <div class="col-sm-7">
+                        <a id="menuToggle" class="menutoggle pull-left">
+                            <i class="fa fa fa-tasks"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="user-area float-right">
+                            <a href="#" aria-expanded="false">
+                                <i class="fa fa-power-off"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content mt-3">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div id="messages">
+                            <% for(var i= 0; i<chats.length; i++){
+                                 if(chats[i].msgType == "thread_end"){ %>
+                                    <div class="thread_end"></div>
+                                <% } else if(chats[i].fbid != chats[i].from){  %>
+                                <div class="representative">
+                                    <div class="representative-body">
+                                        <div class="name">
+                                            <%= chats[i].fromname %>
+                                        </div>
+                                        <% if(chats[i].msgType == "text"){ %>
+                                            <div>
+                                                <%= chats[i].msg %>
+                                            </div>
+                                            <% } %>
+                                    </div>
+                                </div>
+                                <% } else{ %>
+                                    <% if(chats[i].msgType == "new_thread"){ %>
+                                        <div class="new_thread">New Thread started at <%= moment(chats[i].created_at).format('MMMM Do YYYY, h:mm:ss a'); %></div>
+                                    <% } else { %>
+                                    <div class="user">
+                                        <div class="user-body">
+                                            <div class="name">
+                                                    <%= chats[i].fromname %>
+                                            </div>
+                                            <% if(chats[i].msgType == "text"){ %>
+                                                <div>
+                                                    <%= chats[i].msg %>
+                                                </div>
+                                                <% } %>
+                                        </div>
+                                    </div>
+                                    <% }}} %>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="form">
+                <div>
+                    <div style="width: 120px; float: right;">
+                            <button id="send">Send</button>
+                            <button id="end-conversation" data-toggle="modal" data-target="#endConversationModal">
+                                <i class="fa fa-stop"></i>
+                            </button>
+                    </div>
+                    <div style="overflow: hidden;">
+                        <textarea id=“m” style="width: 99%;" autocomplete="off"  placeholder="Response...">
+                        </textarea>
+                        <!-- <input id="m" autocomplete="off" placeholder="Response..." /> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="modal fade" id="endConversationModal" tabindex="-1" role="dialog" aria-labelledby="staticModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="staticModalLabel">End Conversation</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Are you sure you want to end conversation?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                <button id="confirmEndConversation" type="button" class="btn btn-primary">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+        <% include partials/scripts %>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+        <script>
+            $(function () {
+                $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+               // var socket = io.connect('https://danone-apta-advice.herokuapp.com');
+                var socket = io.connect('http://localhost:3002/');
+                $("#confirmEndConversation").click(function(){
+                    var obj = {
+                        "userType": "representative", 
+                        "fbid": "<%= fbid %>",
+                        "from": "<%= name %>",
+                        "msgType": "thread end",
+                        "msg": 'thread end',
+                        "rid": "<%= rid %>" 
+                    };
+                    socket.emit('new-message-WbINSag0HY', obj); 
+                    $('#m').val('');
+                    $('.form').hide();
+                    $('#endConversationModal').modal('hide');
+                });
+                $('#send').click(function (event) {
+                    sendMsg();
+                });
+                $("#m").keypress(function(e){
+                    if(e.keyCode==13){
+                        sendMsg();
+                    }
+                });
+                function sendMsg(){
+                    if ($('#m').val() == "")
+                        return;
+                    var obj = {
+                        "userType": "representative",
+                        "fbid": "<%= fbid %>",
+                        "from": "<%= name %>",
+                        "msgType": "text",
+                        "msg": $('#m').val(),
+                        "rid": "<%= rid %>"
+                    };
+                    socket.emit('new-message-WbINSag0HY', obj);
+                    $('#m').val('');
+                }
+                socket.on('new-message-WbINSag0HY', function (data) {
+                    var str = '';
+                    if (data.msgType == "thread end") {
+                        str = '<div class="thread_end"></div>';
+                        setTimeout(function(){
+                            var url = "/user/";
+                            window.location = url;
+                        }, 1500);
+                    }
+                    else if(data.fbid == "<%= fbid %>"){
+                        if (data.hasOwnProperty("userType") && (data.userType == "representative" || data.userType == "admin")) {
+                            if (data.hasOwnProperty("fbid") && data.hasOwnProperty("from") && data.hasOwnProperty("msgType") && data.hasOwnProperty("msg")) {
+                                str = '<div class="representative">';
+                                str += '<div class="representative-body">';
+                                str += '<div class="name">' + data.from + '</div>';
+                                if (data.msgType == "text") {
+                                    str += '<div>' + data.msg + '</div>';
+                                }
+                                str += '</div>';
+                                str += '</div>';
+                            }
+                        }
+                        else {
+                            if (data.hasOwnProperty("fbid") && data.hasOwnProperty("from") && data.hasOwnProperty("msgType") && data.hasOwnProperty("msg")) {
+                                str = '<div class="user">';
+                                str += '<div class="user-body">';
+                                str += '<div class="name">' + data.from + '</div>';
+                                if (data.msgType == "text") {
+                                    str += '<div>' + data.msg + '</div>';
+                                }
+                                str += '</div>';
+                                str += '</div>';
+                                //uid = data.fbid;
+                            }
+                        }
+                    }
+                    $('#messages').append(str);
+                    $("html, body").animate({ scrollTop: $(document).height() }, 1000);
+                });
+            });
+        </script>
+</body>
+</html>

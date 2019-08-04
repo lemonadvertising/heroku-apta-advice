@@ -1,0 +1,299 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>تاريخ الولادة</title>
+    <!--<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style type="text/css">
+        body {
+            font-family: 'Roboto';
+            background-color: #d6e4f1;
+            overflow: hidden;
+            
+        }
+        
+        h3{
+            direction: rtl;
+            width: 85%;
+        }
+
+        select {
+            margin: 20px auto;
+        }
+
+        .container {
+            margin: 0 auto 30px auto;
+        }
+        
+        .text-right{
+            direction: rtl;
+        }
+
+        .btn {
+            background-color: #4CAF50;
+            /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            font-size: 16px;
+            margin: 0 auto;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .logo {
+            width: 120px;
+            margin-top: 15px;
+        }
+
+        .center {
+            text-align: center;
+            width:85%;
+            margin: 0 auto;
+        }
+        
+        
+        
+        #snackbar{
+            text-align: center;
+            position: absolute;
+            margin: 0 auto;
+            left: 0px;
+            right: 0;
+            bottom: 15px;
+            visibility: hidden;
+            border: 3px solid green;
+            width: 80%;
+            bottom: 5px;
+        }
+        
+        .agree{
+            font-size: 0.8em;
+            margin-bottom: 8px;
+            background-color: lightgreen;
+            border-radius: 10px;
+        }
+        
+        .footer {
+                margin-top: 30px;
+                font-size: 1em;
+/*                text-align: center;*/
+            }
+        .footer2 {
+            margin-top: 4px;
+            font-size: 1em;
+/*            text-align: center;*/
+        }
+        
+        
+        #snackbar.show {
+            visibility: visible;
+            -webkit-animation: fadein 0.5s;
+            animation: fadein 0.5s;
+        }
+        
+        #snackbar.hide {
+            visibility: hidden;
+            -webkit-animation: fadeout 0.5s;
+            animation: fadeout 0.5s;
+        }
+
+
+        @-webkit-keyframes fadein {
+            from {bottom: 0; opacity: 0;} 
+            to {bottom: -120px; opacity: 1;}
+        }
+
+        @keyframes fadein {
+            from {bottom: -120px; opacity: 0;}
+            to {bottom: 0; opacity: 1;}
+        }
+        
+        @-webkit-keyframes fadeout {
+            from {bottom: 30px; opacity: 1;} 
+            to {bottom: 0; opacity: 0;}
+        }
+
+        @keyframes fadeout {
+            from {bottom: 30px; opacity: 1;}
+            to {bottom: 0; opacity: 0;}
+        }
+
+        @media screen and (max-width: 768px) {
+          /*.logo{
+              width: 45%;
+            margin-left: -18%;*/
+            
+            .footer {
+                margin-top: 15px;
+                font-size: 0.7em;
+                text-align: center;
+            }
+        .footer2 {
+            margin-top: 4px;
+            font-size: 0.8em;
+            text-align: center;
+        }
+            
+            h3{
+                direction: rtl;
+                width: 92%;
+            }
+      }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="/fb/img/apta-advice-desktop.png" alt="" class="logo">
+        <h3>كم يبلغ عمر طفلك؟</h3>
+
+        <form class="form-horizontal" role="form" method="POST" id="dobForm">
+
+            <div class="form-group text-right">
+                <div class="col-lg-12 center">
+                    <input type="text" name="birthday" value="" id="simple"/>
+                    <button class="btn" id="next">ادخال البيانات</button>
+                    
+                </div>
+
+            </div>
+        </form>
+        <div id="snackbar">
+            <p class="footer">نستخدم ملفات تعريف الارتباط لنقدم لك تجربة أفضل استعراض وتحليل حركة المرور، وتخصيص المحتوى. إذا كنت لا تزال تصفح أنت توافق على استخدام ملفات تعريف الارتباط</p>
+            <p class="footer2">معرفة المزيد <a href="https://www.apta-advice.com/ar/terms-conditions/"><u>هنا</u></a></p>
+            <button class="agree" id="agr">موافق</button>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="/fb/dist/bootstrap-birthday.js"></script>
+<!--    <script src="bootstrap-birthday.js"></script>-->
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var x;
+            var cname ='apta_cookie=';
+            
+            
+            x = document.getElementById("snackbar");
+            var decodedCookie = decodeURIComponent(document.cookie);
+            var getdata = decodedCookie.split('=');
+            
+            
+            if(getdata[1]!='agree'){
+               x.className = "show";
+               }
+            
+            
+            $("#agr").click(function(){
+                x.className = "hide";
+                document.cookie =cname + 'agree';
+                
+            });
+            
+            var date;
+            $('#simple').bootstrapBirthday({
+                text: {
+                    year: "السنة",
+                    month: "في الشهر",
+                    day: "اليوم",
+                    months: {
+                      short: [
+                        "كانون الثاني",
+                        "شباط",
+                        "آذار",
+                        "نيسان",
+                        "أيار",
+                        "حزيران",
+                        "تموز",
+                        "آب",
+                        "أيلول",
+                        "تشرين الأول",
+                        "تشرين الثاني",
+                        "كانون الأول"
+                      ]
+                    }
+                  },
+                widget: {
+                    wrapper: {
+                        tag: 'div',
+                        class: ''
+                    },
+                    wrapperYear: {
+                        use: false,
+                        placeholder:'sdsa'
+                    },
+                    wrapperMonth: {
+                        use: false
+                    },
+                    wrapperDay: {
+                        use: false
+                    },
+                    selectYear: {
+                        name: 'birthday[year]',
+                        class: 'form-control'
+                    },
+                    selectMonth: {
+                        name: 'birthday[month]',
+                        class: 'form-control'
+                    },
+                    selectDay: {
+                        name: 'birthday[day]',
+                        class: 'form-control'
+                    }
+                },
+                maxAge: 5,
+                dateFormat: 'littleEndian',
+                onChange: function () {
+                    //console.log(document.getElementById('simple').value);
+                    date = document.getElementById('simple').value;
+                }
+            });
+            $("#dobForm").submit(function (e) {
+                e.preventDefault();
+                if(new Date(date)>new Date()){
+                   return;
+                   }
+                if (date != undefined){
+                    //alert(date);
+                    $.ajax({
+                      type: 'POST',
+                      url: "/fb/dob/<%= fbid %>",
+                      data: {'date':date},
+                      dataType: "html",
+                      success: function(resultData) {
+                          window.close();
+                            setTimeout(function () {
+                                var url="https://m.me/AptaAdvice";
+                                window.location=url;
+                            }, 300);
+                      },
+                      error: function(err) { 
+                          //console.log(err) 
+                          window.close();
+                          setTimeout(function () {
+                            var url="https://m.me/AptaAdvice";
+                            window.location=url;
+                        }, 300);
+                      }
+                    });
+                    
+                }
+                    
+                else{
+                    return false;
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

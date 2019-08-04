@@ -1,0 +1,158 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <%if (flashType != undefined && flashType != "") { %>
+                    <div class="sufee-alert alert with-close alert-<%= flashType %> alert-dismissible fade show">
+                        <%= flashMsg %>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <% } %>
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Push Notification</strong>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" id="addArticleForm" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="language" class="control-label mb-1">Language</label>
+                                    <select class="form-control" name="language" id="language">
+                                        <option value="All">All</option>
+                                        <option value="En">En</option>
+                                        <option value="Ar">Ar</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subscription-type" class="control-label mb-1">Subscription Type</label>
+                                    <select class="form-control" name="subscription-type" id="subscription-type">
+                                        <option value="All">All</option>
+                                        <option value="Pre-Pregnancy">Pre-Pregnancy</option>
+                                        <option value="Pregnancy">Pregnancy</option>
+                                        <option value="Motherhood">Motherhood</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="subscription-time" class="control-label mb-1">Send to</label>
+                                    <select class="form-control" name="subscription-time" id="subscription-time">
+                                        <option value="All">All</option>
+                                    </select>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="title" class="control-label mb-1">Notification Title</label>
+                                    <input id="title" name="title" type="text" class="form-control" aria-required="true"
+                                        aria-invalid="false" value="" maxlength="80">
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="thumbnail" class="control-label mb-1">Notification Thumbnail</label>
+                                    <input type="file" name="thumbnail" id="thumbnail" accept="image/*" />
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="url" class="control-label mb-1">URL</label>
+                                    <input id="url" name="url" type="text" class="form-control" aria-required="true"
+                                        aria-invalid="false" value="">
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <button id="add-button" type="submit" class="btn btn-lg btn-info btn-block" style="background-color: #006ab4;">
+                                    <i class="fa fa-bell fa-sm"></i>&nbsp;
+                                    <span>Push</span>
+                                </button>
+                                <p>* You can not stop/delete messages once you click on push button.</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    <% include partials/scripts %>
+    <script>
+        $(document).ready(function () {
+            $("#subscription-type").change(function(){
+                console.log($(this).val());
+                let str = '<option value="All">All</option>';
+                if($(this).val()=='Pregnancy'){
+                    for(let i=6;i<=40;i++){
+                        str += `<option value="${i}">Week ${i}</option>`;
+                    }
+                }
+                else if($(this).val()=='Motherhood'){
+                    str += `<option value="month0_3">0 to 3 Months</option>
+                    <option value="month4_6">4 to 6 Months</option>
+                    <option value="month7_9">7 to 9 Months</option>
+                    <option value="month10_12">10 to 12 Months</option>
+                    <option value="oneYr">1 Year</option>
+                    <option value="twoYr">2 Years</option>
+                    <option value="threeYr">3 Years</option>
+                    <option value="pre_school">Pre School</option>
+                    `;
+                }
+                $("#subscription-time").html(str);
+            });
+
+            $("#addArticleForm").submit(function () {
+                if($("#title").val().trim() == ""){
+                    $("#title").next().html("* Please enter article's title.");
+                    return false;
+                }
+                else{
+                    $("#title").next().html("");
+                }
+                var re = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i;
+                if (!re.test($("#url").val())) {
+                    $("#url").next().html("* Please enter a valid URL.");
+                    return false;
+                }
+                else{
+                    $("#url").next().html("");
+                }
+               
+                return true;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

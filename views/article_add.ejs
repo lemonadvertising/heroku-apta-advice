@@ -1,0 +1,130 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <div class="row">
+                <div class="col-md-8 offset-md-2">
+                    <%if (flashType != undefined && flashType != "") { %>
+                    <div class="sufee-alert alert with-close alert-<%= flashType %> alert-dismissible fade show">
+                        <%= flashMsg %>
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <% } %>
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">Add article for 
+                                <% if(articleFor == "pre-pregnancy"){ %>
+                                    Pre-Pregnancy
+                                <% }else if(articleFor == "pregnancy"){ %>
+                                    Pregnancy
+                                <% }else if(articleFor == "motherhood"){ %>
+                                    Motherhood
+                                <% } %>
+                                <% if(articleLang == "En"){ %>
+                                     (English)
+                                <% }else if(articleLang == "Ar"){ %>
+                                     (Arabic)
+                                <% } %>
+                            </strong>
+                            <a href="/article/view/<%= articleFor %>/<%= articleLang %>" class="btn btn-primary btn-blue pull-right">Back</a>
+                        </div>
+                        <div class="card-body">
+                            <form method="POST" id="addArticleForm" enctype="multipart/form-data">
+                                <div class="form-group">
+                                    <label for="title" class="control-label mb-1">Title</label>
+                                    <input id="title" name="title" type="text" class="form-control" aria-required="true"
+                                        aria-invalid="false" value="<%= title %>" maxlength="80">
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="order" class="control-label mb-1">Week</label>
+                                    <input id="order" name="order" type="number" class="form-control" aria-required="true" aria-invalid="false" value="<%= order %>">
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="thumbnail" class="control-label mb-1">Thumbnail</label>
+                                    <input type="file" name="thumbnail" id="thumbnail" accept="image/*" />
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <div class="form-group">
+                                    <label for="url" class="control-label mb-1">URL</label>
+                                    <input id="url" name="url" type="text" class="form-control" aria-required="true"
+                                        aria-invalid="false" value="<%= url %>">
+                                    <small class="help-block form-text "></small>
+                                </div>
+                                <button id="add-button" type="submit" class="btn btn-lg btn-info btn-block" style="background-color: #006ab4;">
+                                    <i class="fa fa-plus fa-sm"></i>&nbsp;
+                                    <span>Add</span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    <% include partials/scripts %>
+    <script>
+        $(document).ready(function () {
+            $("#addArticleForm").submit(function () {
+                if($("#title").val().trim() == ""){
+                    $("#title").next().html("* Please enter article's title.");
+                    return false;
+                }
+                else{
+                    $("#title").next().html("");
+                }
+                var re = /^(http:\/\/www\.|https:\/\/www\.|http:\/\/|https:\/\/)?[a-z0-9]+([\-\.]{1}[a-z0-9]+)*\.[a-z]{2,5}(:[0-9]{1,5})?(\/.*)?$/i;
+                if (!re.test($("#url").val())) {
+                    $("#url").next().html("* Please enter a valid URL.");
+                    return false;
+                }
+                else{
+                    $("#url").next().html("");
+                }
+               
+                return true;
+            });
+        });
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+        <!-- /#left-panel -->
+        <!-- Right Panel -->
+        <div id="right-panel" class="right-panel">
+            <!-- Header-->
+            <header id="header" class="header">
+                <div class="header-menu">
+                    <div class="col-sm-7">
+                        <a id="menuToggle" class="menutoggle pull-left">
+                            <i class="fa fa fa-tasks"></i>
+                        </a>
+                    </div>
+                    <div class="col-sm-5">
+                        <div class="user-area float-right">
+                            <a href="#" aria-expanded="false">
+                                <i class="fa fa-power-off"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="content">
+                <div class="row">
+                    <div class="col-md-8 offset-md-2">
+                        <%if (flashType != undefined && flashType != "") { %>
+                        <div class="sufee-alert alert with-close alert-<%= flashType %> alert-dismissible fade show">
+                            <%= flashMsg %>
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <% } %>
+                        <div class="card">
+                            <div class="card-header">
+                                <strong class="card-title">Add Customer Care Representative</strong>
+                            </div>
+                            <div class="card-body">
+                                <form method="POST" id="addUserForm">
+                                    <div class="form-group">
+                                        <label for="name" class="control-label mb-1">Name</label>
+                                        <input id="name" name="name" type="text" class="form-control" aria-required="true" aria-invalid="false" value="<%= name %>" >
+                                        <small class="help-block form-text "></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="email" class="control-label mb-1">Email</label>
+                                        <input id="email" name="email" type="email" class="form-control" aria-required="true" aria-invalid="false" value="
+                                        <%= email %>" >
+                                        <small class="help-block form-text "></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="password" class="control-label mb-1">Password</label>
+                                        <input id="password" name="password" type="password" class="form-control" aria-required="true" aria-invalid="false"  value="<%= password %>" >
+                                        <small class="help-block form-text "></small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordCnf" class="control-label mb-1">Confirm Password</label>
+                                        <input id="passwordCnf" name="passwordCnf" type="password" class="form-control" aria-required="true" aria-invalid="false" >
+                                        <small class="help-block form-text "></small>
+                                    </div>
+<button id="add-button" type="submit" class="btn btn-lg btn-info btn-block" style="background-color: #006ab4;">
+                                        <i class="fa fa-plus fa-sm"></i>&nbsp;
+                                        <span>Add</span>
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#right-panel -->
+        <!-- Right Panel -->
+        <% include partials/scripts %>
+        <script>
+             $(document).ready(function () {
+                $("#addUserForm").submit(function(){
+                    /* if($("#name").val().trim() == ""){
+                        $("#name").next().html("* Please enter representative's name.");
+                        return false;
+                    }
+                    else{
+                        $("#name").next().html("");
+                    }
+                    var re = /^([\w-]+(?:\.[\w-]+)*)@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$/i;
+                    if (!re.test($("#email").val())) {
+                        $("#email").next().html("* Enter a valid Email.");
+                        return false;
+                    }
+                    else{
+                        $("#email").next().html("");
+                    }
+                    if ($("#password").val().trim() == "") {
+                        $("#password").next().html("* Please enter password.");
+                        return false;
+                    }
+                    else {
+                        $("#password").next().html("");
+                    }
+                    if ($("#passwordCnf").val() != $("#password").val()) {
+                        $("#passwordCnf").next().html("* Passwords does not match.");
+                        return false;
+                    }
+                    else {
+                        $("#passwordCnf").next().html("");
+                    } */
+                    return true;
+                });
+            });
+        </script>
+
+</body>
+
+</html>

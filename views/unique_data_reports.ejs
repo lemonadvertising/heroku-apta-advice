@@ -1,0 +1,172 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <meta charset="UTF-8">
+    <% include partials/scripts %>
+    <style>
+        .btn-margin{
+            border-radius: 5px;
+            margin-bottom: 7px;
+        }
+        
+        /*a:hover, a:focus {
+            text-decoration: none;
+            color: #fff;
+        }*/
+        
+        
+        .wcolor {
+            color: white !important;
+        }
+        
+        .makeL {
+            float: left;
+            margin-right: 10px;
+        }
+    </style>
+  		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+   
+    <script>
+      $(document).ready(function(){
+          var u_data =<%- JSON.stringify(udata) %>;
+    			 var oTable = $("#mtable").DataTable({
+    				data:u_data,
+    				"columns":[
+    					{ title: "Profile name" },
+                        { title: "Language" },/*
+                        { title: "DOB(Motherhood)" },
+                        { title: "Age(Motherhood)" },*/
+                        { title: "Chat started on" }
+    				]
+    			 });
+          var dateAsObject1;
+          var dateAsObject2;
+          $( function() {
+            $( "#from" ).datepicker({
+                dateFormat: 'dd-mm-yy',
+                onSelect: function(dateText, inst) { 
+                 
+                  dateAsObject1 = $(this).datepicker( { dateFormat: 'dd-mm-yy' }).val();
+                    console.log(dateAsObject1);
+               }
+                
+            });
+          });
+          
+          $( function() {
+            $( "#to" ).datepicker({
+                dateFormat: 'dd-mm-yy',
+                onSelect: function(dateText, inst) { 
+                 
+                  dateAsObject2 = $(this).datepicker( { dateFormat: 'dd-mm-yy' }).val();
+                    //console.log(dateAsObject2);
+                      var data1 = dateAsObject1.split("-");
+                      var data2 = dateAsObject2.split("-");
+                      dateAsObject1 = new Date(data1[2]+"-"+data1[1]+"-"+data1[0]);
+                      dateAsObject2 = new Date(data2[2]+"-"+data2[1]+"-"+data2[0]);
+                    if(dateAsObject1.getTime()<=dateAsObject2.getTime()){
+                        window.open("https://danone-apta-advice.herokuapp.com/dashboard/unique_data?from="+dateAsObject1+"&to="+dateAsObject2,"_self");
+                    }
+                    else{
+                        alert ("Please select correct range!");
+                        //window.open("http://localhost:3002/dashboard/unique_data","_self");
+                        $('#from').val('');
+                        $('#to').val('');
+                        dateAsObject1 = undefined;
+                        dateAsObject2 = undefined;
+                    }
+                    
+               }
+                
+            });
+          });
+          
+          $("#download").click(function(){
+              //console.log("a");
+              var url = window.location.search;
+              //console.log(url);
+              var data1=getParameterByName("from",url);
+              var data2=getParameterByName("to",url);
+              //console.log(data1);
+              //console.log(data2);
+              if(data1!=null && data2!=null){
+                  data1 = data1.split("-");
+                  data2 = data2.split("-");
+                  dateAsObject1 = new Date(data1[2]+"-"+data1[1]+"-"+data1[0]);
+                  dateAsObject2 = new Date(data2[2]+"-"+data2[1]+"-"+data2[0]);
+                 }
+              if(dateAsObject1==undefined || dateAsObject2==undefined){
+                  //console.log("b");
+                 window.open("https://danone-apta-advice.herokuapp.com/dashboard/unique_data?r_type=report","_self");
+                 }
+              else if(dateAsObject1<dateAsObject2){
+                  //console.log("a");
+                   window.open("https://danone-apta-advice.herokuapp.com/dashboard/unique_data?from="+dateAsObject1+'&to='+dateAsObject2+'&r_type=report',"_self");
+                   }
+                else if(dateAsObject1.getTime()==dateAsObject2.getTime()){
+                    //console.log("b");
+                    window.open("https://danone-apta-advice.herokuapp.com/dashboard/unique_data?from="+dateAsObject1+'&to='+dateAsObject2+'&r_type=sameDate',"_self");
+                   }
+            });
+          
+          function getParameterByName(name,url) {
+            name = name.replace(/[\[\]]/g, '\\$&');
+            var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+                results = regex.exec(url);
+            if (!results) return null;
+            if (!results[2]) return '';
+            return decodeURIComponent(results[2].replace(/\+/g, ' '));
+        }
+        });
+    		 
+      
+    </script>  
+  </head>
+  <body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-7">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                </div>
+                <div class="col-sm-5">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+        <a id="download" class="btn btn-primary btn-md btn-margin wcolor">Download</a>
+        <div>
+            <p class="makeL">From: <input type="text" id="from"></p>
+            <p>To: <input type="text" id="to"></p>
+        </div>
+        <table id="mtable" class="table table-striped" width="100%"></table>
+        </div>
+    </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    
+  </body>
+</html>

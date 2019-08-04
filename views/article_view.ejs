@@ -1,0 +1,133 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <% include partials/head %>
+    <title>Danone</title>
+    <style>
+        html,
+        body {
+            overflow-x: hidden;
+        }
+        a.active{
+            color: #000;
+        }
+        .btn-blue{
+            background: #006ab4;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Left Panel -->
+    <% include partials/leftPanel %>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="header-menu">
+                <div class="col-sm-10">
+                    <a id="menuToggle" class="menutoggle pull-left">
+                        <i class="fa fa fa-tasks"></i>
+                    </a>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a <% if(articleLang == "En"){ %>class="active" <% } %> href="/article/view/<%= articleFor %>/En">English</a></li>
+                        <li class="list-inline-item"><a <% if(articleLang == "Ar"){ %>class="active" <% } %> href="/article/view/<%= articleFor %>/Ar">Arabic</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <div class="user-area float-right">
+                        <a href="#" aria-expanded="false">
+                            <i class="fa fa-power-off"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="content mt-3">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="card">
+                        <div class="card-header">
+                            <strong class="card-title">
+                                <% if(articleFor == "pre-pregnancy"){ %>
+                                    Pre-Pregnancy
+                                <% }else if(articleFor == "pregnancy"){ %>
+                                    Pregnancy
+                                <% }else if(articleFor == "motherhood"){ %>
+                                    Motherhood
+                                <% } %>
+                                <% if(articleLang == "En"){ %>
+                                     (English)
+                                <% }else if(articleLang == "Ar"){ %>
+                                     (Arabic)
+                                <% } %>
+                            </strong>
+                            <a href="/article/add/<%= articleFor %>/<%= articleLang %>" class="btn btn-primary btn-blue pull-right">Add Article</a>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <% for(i=0; i<docs.length; i++){ %>
+                                <div class="col-md-4">
+                                    <div class="thumbnail mt-15">
+                                        <a href="<%= docs[i].article_url %>" target="_blanck">
+                                            <img src="<%= docs[i].img_url %>" class="img-rounded">
+                                        </a>
+                                        <div class="caption mt-15">
+                                            <h3><%= docs[i].article_title %></h3>
+                                            <h4 class="mt-15">Week <%= docs[i].article_order %></h4>
+                                            <p class="mt-15">
+                                                <a href="/article/edit/<%= articleFor %>/<%= articleLang %>/<%= docs[i]._id %>" class="btn btn-primary" role="button"><i class="fa fa-pencil"></i> Edit</a>
+                                                <!--<a href="/article/delete/<%= articleFor %>/<%= articleLang %>/<%= docs[i]._id %>" class="btn btn-primary" role="button"><i class="fa fa-trash"></i> Delete</a>-->
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <% } %>
+                                <% if(docs.length == 0){ %>
+                                    <h4>No article found</h4>
+                                <% } %>
+                            </div>
+                            <ul class="pagination">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /#right-panel -->
+    <!-- Right Panel -->
+    <% include partials/scripts %>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.4/socket.io.js"></script>
+    <script>
+        var socket = io.connect('https://danone-apta-advice.herokuapp.com');
+        $(function () {
+            socket.on('new-message-WbINSag0HY', function (data) {
+                if (data.msgType == "new thread") {
+                    if (!$('.new-user-card').hasClass('move')) {
+                        $('.new-user-card').addClass('move');
+                    }
+                }
+            });
+            $("#noRefresh").click(function () {
+                $('.new-user-card').removeClass('move');
+            });
+            $("#refresh").click(function () {
+                $('.new-user-card').removeClass('move');
+                var url = "/user/";
+                window.location = url;
+            });
+        });
+    </script>
+</body>
+
+</html>
